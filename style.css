@@ -1,0 +1,122 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1b2838; /* Dark Steam-like background */
+    color: #c7d5e0; /* Light text color */
+}
+
+/* Header Styling */
+header {
+    background-color: #171a21; /* Slightly darker header */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #66c0f4; /* Steam blue accent */
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: #66c0f4; /* Steam blue */
+    margin-bottom: 5px;
+}
+
+/* Main Content Container */
+.game-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: center; /* Center cards horizontally */
+    padding: 20px;
+    gap: 20px; /* Space between cards */
+    max-width: 1200px;
+    margin: 20px auto; /* Center container on page */
+}
+
+/* Individual Game Card Styling */
+.game-card {
+    background-color: #2a475e; /* Steam panel color */
+    border: 1px solid #1b2838;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 400px; /* Flex properties: grow, shrink, basis (min width) */
+    max-width: 450px; /* Max width per card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Push button to bottom */
+}
+
+.game-card h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.game-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    border: 2px solid #1b2838;
+}
+
+.game-card p {
+    flex-grow: 1; /* Allow description to take available space */
+    margin-bottom: 20px;
+    color: #acb2b8; /* Slightly muted text */
+}
+
+/* Steam Button Styling */
+.steam-button {
+    display: inline-block;
+    background: linear-gradient(to bottom, #799905 5%, #53690c 100%); /* Green gradient */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background 0.2s ease-in-out;
+    border: 1px solid #405006;
+    box-shadow: inset 0px 1px 0px 0px #a4d007;
+    text-shadow: 0px 1px 0px #5b6e1a;
+}
+
+.steam-button:hover {
+    background: linear-gradient(to bottom, #53690c 5%, #799905 100%); /* Inverted gradient on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #171a21;
+    color: #6a7783;
+    font-size: 0.9em;
+    border-top: 1px solid #1b2838;
+}
+
+footer a {
+    color: #66c0f4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Basic Responsiveness */
+@media (max-width: 600px) {
+    .game-container {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center stacked cards */
+    }
+
+    .game-card {
+        flex-basis: auto; /* Let cards take full width */
+        width: 90%; /* Adjust width slightly */
+        max-width: none;
+    }
+}
