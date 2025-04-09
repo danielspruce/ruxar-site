@@ -22,6 +22,41 @@ header h1 {
     margin-bottom: 5px;
 }
 
+/* --- New About Section Styling --- */
+.about-section {
+    max-width: 900px; /* Limit width for readability */
+    margin: 30px auto; /* Center block and add space above/below */
+    padding: 25px;
+    background-color: rgba(42, 71, 94, 0.5); /* Semi-transparent panel color */
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #2a475e;
+}
+
+.about-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.about-section h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #c7d5e0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid #4b6a84; /* Separator line */
+    padding-top: 15px;
+}
+
+.about-section p {
+    color: #acb2b8; /* Slightly muted text */
+    font-size: 1.05em; /* Slightly larger text */
+    margin-bottom: 10px;
+}
+/* --- End About Section Styling --- */
+
+
 /* Main Content Container */
 .game-container {
     display: flex;
@@ -108,6 +143,14 @@ footer a:hover {
 }
 
 /* Basic Responsiveness */
+@media (max-width: 940px) { /* Adjust breakpoint for about section */
+    .about-section {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: none; /* Allow it to use more width */
+    }
+}
+
 @media (max-width: 600px) {
     .game-container {
         flex-direction: column; /* Stack cards vertically on small screens */
@@ -118,5 +161,9 @@ footer a:hover {
         flex-basis: auto; /* Let cards take full width */
         width: 90%; /* Adjust width slightly */
         max-width: none;
+    }
+
+     .about-section {
+        padding: 15px; /* Reduce padding slightly */
     }
 }
