@@ -1,68 +1,62 @@
-/* Basic Reset & Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #1b2838; /* Dark Steam-like background */
-    color: #c7d5e0; /* Light text color */
+    background-color: #1b2838;
+    color: #c7d5e0;
 }
 
-/* Header Styling */
 header {
-    background-color: #171a21; /* Slightly darker header */
+    background-color: #171a21; 
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid #66c0f4; /* Steam blue accent */
+    border-bottom: 3px solid #66c0f4;
 }
 
 header h1 {
     font-family: 'Orbitron', sans-serif;
-    color: #66c0f4; /* Steam blue */
+    color: #66c0f4;
     margin-bottom: 5px;
 }
 
-/* --- New About Section Styling --- */
 .about-section {
-    max-width: 900px; /* Limit width for readability */
-    margin: 30px auto; /* Center block and add space above/below */
+    max-width: 900px; 
+    margin: 30px auto;
     padding: 25px;
-    background-color: rgba(42, 71, 94, 0.5); /* Semi-transparent panel color */
+    background-color: rgba(42, 71, 94, 0.5);
     border: 1px solid #2a475e;
 }
 
-/* New wrapper for flex layout */
 .about-content {
     display: flex;
-    align-items: flex-start; /* Align items top */
-    gap: 25px; /* Space between image and text */
+    align-items: flex-start;
+    gap: 25px;
 }
 
-/* New image styling */
 .about-image {
-    flex-shrink: 0; /* Prevent image from shrinking */
-    width: 100px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Or 'contain' depending on image */
+    flex-shrink: 0;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
 }
 
-/* New text container styling */
 .about-text {
-    flex-grow: 1; /* Allow text to take remaining space */
-    text-align: left; /* Ensure text is left-aligned */
+    flex-grow: 1; 
+    text-align: left;
 }
 
 .about-text h2 {
     font-family: 'Orbitron', sans-serif;
     color: #ffffff;
-    margin-top: 0; /* Remove default top margin */
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
 .about-text p {
     color: #acb2b8;
     font-size: 1.05em;
-    margin-bottom: 0; /* Remove bottom margin if needed */
+    margin-bottom: 0;
 }
 
 .about-section h2 {
@@ -77,54 +71,47 @@ header h1 {
     color: #c7d5e0;
     margin-top: 20px;
     margin-bottom: 10px;
-    border-top: 1px solid #4b6a84; /* Separator line */
+    border-top: 1px solid #4b6a84;
     padding-top: 15px;
 }
 
 .about-section p {
-    color: #acb2b8; /* Slightly muted text */
-    font-size: 1.05em; /* Slightly larger text */
+    color: #acb2b8;
+    font-size: 1.05em;
     margin-bottom: 10px;
 }
-/* --- End About Section Styling --- */
 
-
-/* Main Content Container */
 .game-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: center; /* Center cards horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
-    gap: 20px; /* Space between cards */
+    gap: 20px; 
     max-width: 1200px;
-    margin: 20px auto; /* Center container on page */
+    margin: 20px auto;
 }
-
-
-
   .game-card {
-    background-color: #2a475e; /* Steam panel color */
+    background-color: #2a475e;
     border: 1px solid #1b2838;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
-    flex: 1 1 400px; /* Flex properties: grow, shrink, basis (min width) */
-    max-width: 450px; /* Max width per card */
+    flex: 1 1 400px;
+    max-width: 450px;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: space-between; /* Push button to bottom */
+    flex-direction: column;
+    justify-content: space-between;
 
     
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    /* We specify which properties to transition, the duration, and the easing function */
+
 }
 
 
 .game-card:hover {
-    transform: scale(1.04); /* Slightly enlarge the card */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Enhance the shadow for a "lifted" effect */
+    transform: scale(1.04);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
-
 
 .game-card h2 {
     font-family: 'Orbitron', sans-serif;
@@ -141,15 +128,14 @@ header h1 {
 }
 
 .game-card p {
-    flex-grow: 1; /* Allow description to take available space */
+    flex-grow: 1;
     margin-bottom: 20px;
-    color: #acb2b8; /* Slightly muted text */
+    color: #acb2b8;
 }
 
-/* Steam Button Styling */
 .steam-button {
     display: inline-block;
-    background: linear-gradient(to bottom, #799905 5%, #53690c 100%); /* Green gradient */
+    background: linear-gradient(to bottom, #799905 5%, #53690c 100%);
     color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
@@ -162,10 +148,9 @@ header h1 {
 }
 
 .steam-button:hover {
-    background: linear-gradient(to bottom, #53690c 5%, #799905 100%); /* Inverted gradient on hover */
+    background: linear-gradient(to bottom, #53690c 5%, #799905 100%);
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
     padding: 15px;
@@ -173,7 +158,7 @@ footer {
     background-color: #171a21;
     color: #6a7783;
     font-size: 0.9em;
-    border-top: 3px solid #66c0f4; /* Steam blue accent */
+    border-top: 3px solid #66c0f4;
 }
 
 footer a {
@@ -187,33 +172,27 @@ footer a:hover {
 
 @media (max-width: 600px) {
     .game-container {
-        flex-direction: column; /* Stack cards vertically on small screens */
-        align-items: center; /* Center stacked cards */
+        flex-direction: column;
+        align-items: center;
     }
 
     .about-content {
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center items horizontally in column */
-        text-align: center; /* Center text block below image */
-        gap: 15px; /* Reduce gap */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
     }
 
     .about-image {
-        width: 100px; /* Optionally adjust image size */
-        margin-bottom: 10px; /* Add space below image when stacked */
+        width: 100px;
+        margin-bottom: 10px;
     }
 
     .about-text {
-        text-align: center; /* Center the text when stacked */
+        text-align: center;
     }
 
-    .about-history h3 {
-        margin-top: 10px; /* Adjust spacing */
-    }
-}
-
-
-     .about-section {
-        padding: 15px; /* Reduce padding slightly */
+    .about-section {
+        padding: 15px;
     }
 }
