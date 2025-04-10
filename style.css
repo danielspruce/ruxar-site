@@ -28,9 +28,41 @@ header h1 {
     margin: 30px auto; /* Center block and add space above/below */
     padding: 25px;
     background-color: rgba(42, 71, 94, 0.5); /* Semi-transparent panel color */
-    border-radius: 5px;
-    text-align: center;
     border: 1px solid #2a475e;
+}
+
+/* New wrapper for flex layout */
+.about-content {
+    display: flex;
+    align-items: flex-start; /* Align items top */
+    gap: 25px; /* Space between image and text */
+}
+
+/* New image styling */
+.about-image {
+    flex-shrink: 0; /* Prevent image from shrinking */
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Or 'contain' depending on image */
+}
+
+/* New text container styling */
+.about-text {
+    flex-grow: 1; /* Allow text to take remaining space */
+    text-align: left; /* Ensure text is left-aligned */
+}
+
+.about-text h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    color: #acb2b8;
+    font-size: 1.05em;
+    margin-bottom: 0; /* Remove bottom margin if needed */
 }
 
 .about-section h2 {
@@ -68,8 +100,9 @@ header h1 {
     margin: 20px auto; /* Center container on page */
 }
 
-/* Individual Game Card Styling */
-.game-card {
+
+
+  .game-card {
     background-color: #2a475e; /* Steam panel color */
     border: 1px solid #1b2838;
     border-radius: 5px;
@@ -77,11 +110,21 @@ header h1 {
     text-align: center;
     flex: 1 1 400px; /* Flex properties: grow, shrink, basis (min width) */
     max-width: 450px; /* Max width per card */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     justify-content: space-between; /* Push button to bottom */
+
+    
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* We specify which properties to transition, the duration, and the easing function */
 }
+
+
+.game-card:hover {
+    transform: scale(1.04); /* Slightly enlarge the card */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Enhance the shadow for a "lifted" effect */
+}
+
 
 .game-card h2 {
     font-family: 'Orbitron', sans-serif;
@@ -130,7 +173,7 @@ footer {
     background-color: #171a21;
     color: #6a7783;
     font-size: 0.9em;
-    border-top: 1px solid #1b2838;
+    border-top: 3px solid #66c0f4; /* Steam blue accent */
 }
 
 footer a {
@@ -142,26 +185,33 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Basic Responsiveness */
-@media (max-width: 940px) { /* Adjust breakpoint for about section */
-    .about-section {
-        margin-left: 20px;
-        margin-right: 20px;
-        max-width: none; /* Allow it to use more width */
-    }
-}
-
 @media (max-width: 600px) {
     .game-container {
         flex-direction: column; /* Stack cards vertically on small screens */
         align-items: center; /* Center stacked cards */
     }
 
-    .game-card {
-        flex-basis: auto; /* Let cards take full width */
-        width: 90%; /* Adjust width slightly */
-        max-width: none;
+    .about-content {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items horizontally in column */
+        text-align: center; /* Center text block below image */
+        gap: 15px; /* Reduce gap */
     }
+
+    .about-image {
+        width: 100px; /* Optionally adjust image size */
+        margin-bottom: 10px; /* Add space below image when stacked */
+    }
+
+    .about-text {
+        text-align: center; /* Center the text when stacked */
+    }
+
+    .about-history h3 {
+        margin-top: 10px; /* Adjust spacing */
+    }
+}
+
 
      .about-section {
         padding: 15px; /* Reduce padding slightly */
