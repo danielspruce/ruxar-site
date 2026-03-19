@@ -894,39 +894,40 @@ if('requestIdleCallback' in window){
 })();
 
 /* SCROLL REVEAL
-   - IntersectionObserver (threshold:0, no rootMargin – rootMargin has iOS Safari bugs)
-   - getBoundingClientRect on first frame catches elements already in viewport
-   - passive scroll listener is the belt-and-suspenders for iOS where IO may not fire
+   - IntersectionObserver (threshold:0, rootMargin:'10% 0px' — positive so no iOS Safari bug)
+   - scroll + touchmove + touchend fallbacks for iOS Safari
+   - getBoundingClientRect at 0ms / 300ms / 800ms for late-rendering iOS layouts
+   - 2.5s hard failsafe ensures nothing stays hidden regardless of browser quirks
 */
 (function(){
-  var els = Array.prototype.slice.call(document.querySelectorAll('.rv'));
-
+  const els=document.querySelectorAll('.rv');
   function revealVisible(){
-    els = els.filter(function(el){
-      if(el.classList.contains('vis')) return false;
-      var r = el.getBoundingClientRect();
-      if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); return false; }
-      return true;
+    els.forEach(function(el){
+      if(el.classList.contains('vis')) return;
+      const r=el.getBoundingClientRect();
+      if(r.top<window.innerHeight*1.1&&r.bottom>0) el.classList.add('vis');
     });
-    if(!els.length) window.removeEventListener('scroll', revealVisible);
   }
-
   if('IntersectionObserver' in window){
-    var ob = new IntersectionObserver(function(entries){
-      entries.forEach(function(e, i){
-        if(e.isIntersecting){
-          setTimeout(function(){ e.target.classList.add('vis'); }, i * 90);
-          ob.unobserve(e.target);
-        }
+    const ob=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('vis');ob.unobserve(e.target);}
       });
-    }, { threshold: 0 });
-    els.forEach(function(el){ ob.observe(el); });
+    },{threshold:0,rootMargin:'10% 0px'});
+    els.forEach(function(el){ob.observe(el);});
   }
-
-  // Catch anything in-viewport on load (including iOS where IO fires late)
+  // Scroll + touch fallbacks for iOS Safari
+  window.addEventListener('scroll',revealVisible,{passive:true});
+  document.addEventListener('scroll',revealVisible,{passive:true});
+  window.addEventListener('touchmove',revealVisible,{passive:true});
+  window.addEventListener('touchend',revealVisible,{passive:true});
   requestAnimationFrame(revealVisible);
-  // Scroll fallback so nothing stays hidden if IO misses it
-  window.addEventListener('scroll', revealVisible, { passive: true });
+  setTimeout(revealVisible,300);
+  setTimeout(revealVisible,800);
+  // Hard failsafe: force all visible after 2.5s if still hidden
+  setTimeout(function(){
+    els.forEach(function(el){ el.classList.add('vis'); });
+  },2500);
 })();
 </script>
 </body>
