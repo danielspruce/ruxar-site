@@ -11,7 +11,10 @@
       "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/favicon.svg\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/img/favicon.svg\")",
       "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/web-app-manifest-192x192.png\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/img/web-app-manifest-192x192.png\")",
       "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/web-app-manifest-512x512.png\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/img/web-app-manifest-512x512.png\")",
-      "Bash(xargs sed:*)"
+      "Bash(xargs sed:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
