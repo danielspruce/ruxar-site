@@ -893,18 +893,40 @@ if('requestIdleCallback' in window){
   wrap.addEventListener('focusout', () => track.style.animationPlayState = 'running');
 })();
 
-/* SCROLL REVEAL */
+/* SCROLL REVEAL
+   - IntersectionObserver (threshold:0, no rootMargin – rootMargin has iOS Safari bugs)
+   - getBoundingClientRect on first frame catches elements already in viewport
+   - passive scroll listener is the belt-and-suspenders for iOS where IO may not fire
+*/
 (function(){
-  const els=document.querySelectorAll('.rv');
-  const ob=new IntersectionObserver(en=>{
-    en.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vis'),i*90);ob.unobserve(e.target);}});
-  },{threshold:0,rootMargin:'0px 0px -40px 0px'});
-  els.forEach(el=>ob.observe(el));
-  // Fallback: reveal any .rv already in viewport after a frame
-  requestAnimationFrame(()=>els.forEach(el=>{
-    const r=el.getBoundingClientRect();
-    if(r.top<window.innerHeight&&r.bottom>0) el.classList.add('vis');
-  }));
+  var els = Array.prototype.slice.call(document.querySelectorAll('.rv'));
+
+  function revealVisible(){
+    els = els.filter(function(el){
+      if(el.classList.contains('vis')) return false;
+      var r = el.getBoundingClientRect();
+      if(r.top < window.innerHeight && r.bottom > 0){ el.classList.add('vis'); return false; }
+      return true;
+    });
+    if(!els.length) window.removeEventListener('scroll', revealVisible);
+  }
+
+  if('IntersectionObserver' in window){
+    var ob = new IntersectionObserver(function(entries){
+      entries.forEach(function(e, i){
+        if(e.isIntersecting){
+          setTimeout(function(){ e.target.classList.add('vis'); }, i * 90);
+          ob.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0 });
+    els.forEach(function(el){ ob.observe(el); });
+  }
+
+  // Catch anything in-viewport on load (including iOS where IO fires late)
+  requestAnimationFrame(revealVisible);
+  // Scroll fallback so nothing stays hidden if IO misses it
+  window.addEventListener('scroll', revealVisible, { passive: true });
 })();
 </script>
 </body>
