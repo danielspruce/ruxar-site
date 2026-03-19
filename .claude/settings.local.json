@@ -14,7 +14,9 @@
       "Bash(xargs sed:*)",
       "Bash(git pull:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git push:*)"
     ]
   }
 }
