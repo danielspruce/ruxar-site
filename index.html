@@ -27,29 +27,103 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "name": "iZBOT",
-    "description": "A fast-paced precision platformer where you navigate challenging levels as a cute, agile robot.",
-    "url": "https://ruxar.com/",
-    "author": { "@type": "Organization", "name": "Ruxar", "url": "https://ruxar.com" },
-    "publisher": { "@type": "Organization", "name": "Ruxar", "url": "https://ruxar.com" },
-    "operatingSystem": "Windows",
-    "applicationCategory": "Game",
-    "genre": "Platformer",
-    "offers": {
-      "@type": "Offer",
-      "url": "https://store.steampowered.com/app/388970/iZBOT/",
-      "availability": "https://schema.org/InStock"
-    },
-    "sameAs": [
-      "https://store.steampowered.com/app/388970/iZBOT/",
-      "https://store.steampowered.com/app/1452790/IZBOT_2/"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ruxar.com/#website",
+        "name": "Ruxar",
+        "url": "https://ruxar.com",
+        "publisher": { "@id": "https://ruxar.com/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://ruxar.com/#organization",
+        "name": "Ruxar",
+        "url": "https://ruxar.com",
+        "logo": { "@type": "ImageObject", "url": "https://ruxar.com/img/logo.png" },
+        "sameAs": ["https://store.steampowered.com/search/?developer=Ruxar"]
+      },
+      {
+        "@type": "VideoGame",
+        "@id": "https://ruxar.com/#izbot",
+        "name": "iZBOT",
+        "description": "A fast-paced precision platformer where you guide a nimble robot through hazard-filled levels. Tight controls, instant deaths, one more try.",
+        "url": "https://store.steampowered.com/app/388970/iZBOT/",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg",
+        "genre": ["Platformer", "Precision Platformer", "Indie"],
+        "gamePlatform": ["PC", "Steam"],
+        "operatingSystem": ["Windows", "macOS", "Linux"],
+        "applicationCategory": "Game",
+        "author": { "@id": "https://ruxar.com/#organization" },
+        "publisher": { "@id": "https://ruxar.com/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://store.steampowered.com/app/388970/iZBOT/",
+          "priceCurrency": "USD",
+          "price": "9.99",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@id": "https://ruxar.com/#organization" }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "9",
+          "bestRating": "10",
+          "ratingCount": "219"
+        },
+        "sameAs": ["https://store.steampowered.com/app/388970/iZBOT/"]
+      },
+      {
+        "@type": "VideoGame",
+        "@id": "https://ruxar.com/#izbot2",
+        "name": "iZBOT 2",
+        "description": "The sequel to iZBOT. Expanded precision platformer levels, new mechanics, and the same tight controls — harder than ever.",
+        "url": "https://store.steampowered.com/app/1452790/IZBOT_2/",
+        "image": "https://cdn.akamai.steamstatic.com/steam/apps/1452790/header.jpg",
+        "genre": ["Platformer", "Precision Platformer", "Indie"],
+        "gamePlatform": ["PC", "Steam"],
+        "operatingSystem": ["Windows", "macOS", "Linux"],
+        "applicationCategory": "Game",
+        "author": { "@id": "https://ruxar.com/#organization" },
+        "publisher": { "@id": "https://ruxar.com/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://store.steampowered.com/app/1452790/IZBOT_2/",
+          "priceCurrency": "USD",
+          "price": "9.99",
+          "availability": "https://schema.org/InStock",
+          "seller": { "@id": "https://ruxar.com/#organization" }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "8",
+          "bestRating": "10",
+          "ratingCount": "39"
+        },
+        "sameAs": ["https://store.steampowered.com/app/1452790/IZBOT_2/"]
+      }
     ]
   }
   </script>
 
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-78K4X5VXDG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-78K4X5VXDG');
+  </script>
+
   <meta name="theme-color" content="#05070d" />
+
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 
   <style>
@@ -251,7 +325,7 @@
     .vall svg { transition:transform .2s; }
     .vall:hover svg { transform:translateX(4px); }
 
-    .bg { display:grid;grid-template-columns:repeat(3,1fr);gap:3px; }
+    .bg { display:grid;grid-template-columns:repeat(2,1fr);gap:3px; }
     .bc { background:var(--bg2);padding:36px;text-decoration:none;display:block;position:relative;overflow:hidden;border:1px solid transparent;transition:border-color .3s; }
     .bc:hover { border-color:rgba(0,245,200,.2); }
     .bc::after { content:'';position:absolute;bottom:0;left:36px;right:36px;height:1px;background:linear-gradient(to right,transparent,var(--cyan),transparent);transform:scaleX(0);transition:transform .4s; }
@@ -319,7 +393,8 @@
 
     /* RESPONSIVE */
     @media(max-width:860px){
-      .gg,.bg { grid-template-columns:1fr; }
+      .gg { grid-template-columns:1fr; }
+      .bg { grid-template-columns:1fr; }
       .bheader { flex-direction:column;align-items:flex-start;gap:14px; }
       .stats { grid-template-columns:1fr 1fr; }
     }
@@ -347,7 +422,7 @@
       <a href="#games">Games</a>
       <a href="#blog">Dev Log</a>
       <a href="blog/">Blog</a>
-      <a href="https://store.steampowered.com/app/388970/iZBOT/" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
     </nav>
   </header>
 
@@ -359,17 +434,17 @@
     <h1 class="hero-title">I<span class="z">Z</span>BOT</h1>
 
     <p class="hero-sub">
-      Fast-paced precision platforming.<br/>
+      Fast-paced precision platformer on Steam.<br/>
       One nimble bot. Infinite ways to fail.<br/>
       Zero excuses.
     </p>
 
     <div class="hero-ctas">
-      <a href="https://store.steampowered.com/app/388970/iZBOT/" target="_blank" rel="noopener noreferrer" class="btn bp">
+      <a href="https://store.steampowered.com/app/388970/iZBOT/" target="_blank" rel="noopener noreferrer" class="btn bp" data-track="steam-click" data-game="izbot">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38l3.03-6.25a3.5 3.5 0 0 1-.73-.38 3.5 3.5 0 0 1-1.5-2.88 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-.15l-2.9 6.03C10.8 23.94 11.4 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg>
         Buy on Steam
       </a>
-      <a href="#games" class="btn bs">Explore the Collection</a>
+      <a href="#games" class="btn bs">See Both Games</a>
     </div>
 
     <div class="sh">
@@ -388,8 +463,8 @@
     <div class="c">
       <div class="gg rv">
 
-        <a href="https://store.steampowered.com/app/388970/iZBOT/" target="_blank" rel="noopener noreferrer" class="gc" aria-label="iZBOT on Steam – open in new tab">
-          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" alt="IZBOT precision platformer" loading="lazy" /></div>
+        <a href="/games/izbot/" class="gc" aria-label="iZBOT – learn more and buy on Steam">
+          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" alt="iZBOT – indie precision platformer game on Steam by Ruxar" loading="lazy" /></div>
           <div class="gcov"></div>
           <div class="gbody">
             <p class="gnum">01 / 02</p>
@@ -397,22 +472,22 @@
             <p class="gdesc">The original. Navigate hazard-packed levels as a small but fearless robot. Tight controls. Instant deaths. One more try.</p>
             <span class="gcta">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38l3.03-6.25a3.5 3.5 0 0 1-.73-.38 3.5 3.5 0 0 1-1.5-2.88 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-.15l-2.9 6.03C10.8 23.94 11.4 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg>
-              Get on Steam
+              View Game
             </span>
           </div>
           <div class="cborder"></div>
         </a>
 
-        <a href="https://store.steampowered.com/app/1452790/IZBOT_2/" target="_blank" rel="noopener noreferrer" class="gc" aria-label="iZBOT 2 on Steam – open in new tab">
-          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1452790/header.jpg?t=1708106639" alt="IZBOT 2 precision platformer sequel" loading="lazy" /></div>
+        <a href="/games/izbot-2/" class="gc" aria-label="iZBOT 2 – learn more and buy on Steam">
+          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1452790/header.jpg?t=1708106639" alt="iZBOT 2 – precision platformer sequel on Steam, expanded levels and new mechanics" loading="lazy" /></div>
           <div class="gcov"></div>
           <div class="gbody">
             <p class="gnum">02 / 02</p>
             <h3 class="gtitle">iZBOT 2</h3>
-            <p class="gdesc">Bigger. Harder. More relentless. New mechanics, new levels — the sequel that doubles down on everything.</p>
+            <p class="gdesc">The sequel to iZBOT. Expanded precision platformer levels, new mechanics, and the same tight controls — harder than ever. Available on Steam.</p>
             <span class="gcta">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38l3.03-6.25a3.5 3.5 0 0 1-.73-.38 3.5 3.5 0 0 1-1.5-2.88 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-.15l-2.9 6.03C10.8 23.94 11.4 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg>
-              Get on Steam
+              View Game
             </span>
           </div>
           <div class="cborder"></div>
@@ -538,6 +613,14 @@
           <span class="bread">Read article <span class="barr"></span></span>
         </a>
 
+        <a href="blog/posts/izbot-indie-game-postmortem.html" class="bc">
+          <p class="bnum">004</p>
+          <span class="btag">Dev</span>
+          <h3>iZBOT Indie Game Postmortem — Dev, Marketing &amp; Real Sales Numbers</h3>
+          <p>The full story: what it cost, what it made, what went wrong, and what made iZBOT worth shipping.</p>
+          <span class="bread">Read article <span class="barr"></span></span>
+        </a>
+
       </div>
     </div>
   </section>
@@ -547,7 +630,7 @@
 
   <footer>
     <div class="c fi">
-      <p class="fc">© 2025 Ruxar — Australian Independent Game Studio</p>
+      <p class="fc">© 2014–2026 Ruxar — Australian Independent Game Studio</p>
       <nav aria-label="Footer navigation">
         <a href="blog/">Blog</a>
         <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
@@ -559,13 +642,25 @@
 </div>
 
 <script>
+/* Steam click tracking */
+document.querySelectorAll('[data-track="steam-click"], a[href*="steampowered.com"]').forEach(function(el){
+  el.addEventListener('click', function(){
+    if(typeof gtag === 'function'){
+      gtag('event', 'steam_click', {
+        game: el.getAttribute('data-game') || 'unknown',
+        page: window.location.pathname
+      });
+    }
+  });
+});
+
 /* ═══════════════════════════════════════════════════
    CIRCUIT BOARD CANVAS
    Signals attract to cursor when near (< ATTRACT_R).
    After 2s of cursor stillness they drift back to
    their random grid-traversal pattern.
 ═══════════════════════════════════════════════════ */
-(function(){
+(function initCanvas(){
   const cv  = document.getElementById('cv');
   const ctx = cv.getContext('2d');
   const C   = [0,245,200];
@@ -762,7 +857,13 @@
   });
   resize();
   requestAnimationFrame(frame);
-})();
+}
+
+if('requestIdleCallback' in window){
+  requestIdleCallback(initCanvas, { timeout: 2000 });
+} else {
+  setTimeout(initCanvas, 200);
+}
 
 /* CURSOR */
 (function(){

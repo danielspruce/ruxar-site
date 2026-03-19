@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0c10" />
 
   <!-- ============================================================
        STEP 1: Fill in your article's SEO details below.
@@ -21,8 +22,8 @@
   <meta property="og:image" content="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg" />
 
   <!-- ============================================================
-       STEP 2: Fill in the structured data (helps Google understand
-       this is an article). Replace CAPS placeholders.
+       STEP 2: Fill in the structured data.
+       Replace ALL CAPS placeholders. Dates: YYYY-MM-DD format.
        ============================================================ -->
   <script type="application/ld+json">
   {
@@ -32,43 +33,85 @@
     "description": "YOUR META DESCRIPTION",
     "datePublished": "YYYY-MM-DD",
     "dateModified": "YYYY-MM-DD",
-    "author": { "@type": "Person", "name": "Daniel Spruce" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Ruxar",
-      "url": "https://ruxar.com"
+    "author": {
+      "@type": "Person",
+      "name": "Daniel Spruce",
+      "url": "https://ruxar.com/",
+      "sameAs": ["https://www.gamedeveloper.com/author/daniel-spruce"]
     },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://ruxar.com/blog/posts/YOUR-ARTICLE-SLUG.html"
-    }
+    "publisher": { "@type": "Organization", "name": "Ruxar", "url": "https://ruxar.com" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ruxar.com/blog/posts/YOUR-ARTICLE-SLUG.html" }
   }
   </script>
 
+  <!-- BreadcrumbList — update position 3 name and item URL -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruxar.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://ruxar.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "YOUR ARTICLE TITLE HERE", "item": "https://ruxar.com/blog/posts/YOUR-ARTICLE-SLUG.html" }
+    ]
+  }
+  </script>
+
+  <!-- OPTIONAL: FAQPage schema — add if article has a visible FAQ section.
+       Each question/answer must be visible in the article body.
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "YOUR QUESTION?",
+        "acceptedAnswer": { "@type": "Answer", "text": "YOUR ANSWER." }
+      }
+    ]
+  }
+  </script>
+  -->
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-78K4X5VXDG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-78K4X5VXDG');
+  </script>
+
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+
   <link rel="stylesheet" href="../../ruxar.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Header — DO NOT EDIT -->
   <header class="site-header">
     <div class="header-inner">
       <a href="/" class="site-logo">
-        <img src="../../img/logo.png" alt="Ruxar" />
+        <img src="../../img/logo.png" alt="Ruxar – Australian Indie Game Studio" height="32" />
       </a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/">Games</a>
         <a href="/blog/">Blog</a>
-        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener">Steam</a>
+        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <article class="article-wrap">
+    <article class="article-wrap" itemscope itemtype="https://schema.org/Article">
 
-      <!-- Back link — DO NOT EDIT -->
       <a href="/blog/" class="back-link">← Back to Blog</a>
 
       <!-- ============================================================
@@ -79,13 +122,13 @@
            ============================================================ -->
       <div class="article-meta">
         <span class="article-tag">TAG HERE</span>
-        <time class="article-date" datetime="YYYY-MM-DD">Month DD, YYYY</time>
+        <time class="article-date" datetime="YYYY-MM-DD" itemprop="datePublished">Month DD, YYYY</time>
       </div>
 
       <!-- ============================================================
            STEP 4: Your article title (H1) — matches your <title> tag
            ============================================================ -->
-      <h1>YOUR ARTICLE TITLE HERE</h1>
+      <h1 itemprop="headline">YOUR ARTICLE TITLE HERE</h1>
 
       <!-- ============================================================
            STEP 5: Intro paragraph — shown with a coloured left border.
@@ -95,75 +138,74 @@
 
       <!-- ============================================================
            STEP 6: Article body.
-           Use the pattern below to structure your content.
 
-           Section headers use <h2> (pixel font, all caps look) for
-           numbered/labelled sections, and <h3> for the section subtitle.
-
+           Section headers use <h2> for main sections, <h3> for subtitles.
            Body text uses <p> tags. Use <strong> for bold.
-           Use <a href="..."> for links.
-
-           Copy and paste the section block as many times as needed.
+           Link to other articles or to iZBOT/iZBOT 2 on Steam where it makes sense.
            ============================================================ -->
-      <div class="article-body">
+      <div class="article-body" itemprop="articleBody">
 
-        <!-- Opening paragraph (no header needed) -->
         <p>YOUR OPENING PARAGRAPH. Set the scene or frame the topic here.</p>
 
         <!-- === SECTION BLOCK — copy/paste this for each section === -->
-        <h2>SECTION LABEL (e.g. "Lesson 01" or "01.")</h2>
+        <h2>SECTION LABEL</h2>
         <h3>Section Subtitle Here</h3>
         <p>YOUR SECTION CONTENT. Keep paragraphs to 3-5 sentences. Use <strong>bold text</strong> for key points. Link to other articles or to iZBOT on Steam where it makes sense.</p>
-        <p>Additional paragraph in this section if needed.</p>
         <!-- === END SECTION BLOCK === -->
 
-        <!-- === ANOTHER SECTION === -->
-        <h2>SECTION LABEL</h2>
-        <h3>Section Subtitle</h3>
-        <p>Content here.</p>
-        <!-- === END === -->
-
         <!-- ============================================================
-             OPTIONAL: Call-to-action box — promotes iZBOT.
-             Include at least once per article, somewhere relevant.
-             Edit the h3 and p text to match the article's context.
+             Call-to-action box — include at least once per article.
+             Edit h3 and p text to suit the article context.
              ============================================================ -->
         <div class="cta-box">
-          <h3>CTA HEADLINE (e.g. "Try iZBOT on Steam")</h3>
-          <p>CTA DESCRIPTION — short, relevant to the article topic. 1-2 sentences.</p>
-          <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener">
+          <h3>CTA HEADLINE</h3>
+          <p>CTA DESCRIPTION — 1-2 sentences, relevant to the article.</p>
+          <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38l3.03-6.25a3.5 3.5 0 0 1-.73-.38 3.5 3.5 0 0 1-1.5-2.88 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-.15l-2.9 6.03C10.8 23.94 11.4 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm-4.5 14.5a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2zm10-5a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
-            View iZBOT on Steam
+            Play iZBOT on Steam – $9.99
           </a>
         </div>
 
-        <!-- Closing section if needed -->
-        <h2>FINAL SECTION LABEL</h2>
-        <h3>Closing Subtitle</h3>
-        <p>Closing content. Try to end with something that either drives to Steam or links to another article.</p>
+        <!-- Related Reading — link to at least 2 other posts -->
+        <div class="related-reading" style="margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+          <h2>Related Reading</h2>
+          <ul>
+            <li><a href="OTHER-POST.html">OTHER POST TITLE</a></li>
+            <li><a href="OTHER-POST.html">OTHER POST TITLE</a></li>
+          </ul>
+        </div>
 
       </div>
 
-      <!-- Footer nav — update the links to match actual prev/next articles -->
       <div class="article-footer-nav">
         <a href="/blog/" class="back-link">← All Posts</a>
-        <!-- Optional: link to previous or next article -->
-        <!-- <a href="OTHER-ARTICLE.html" class="btn btn-outline">Next: Title →</a> -->
+        <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">Play iZBOT on Steam – $9.99</a>
       </div>
 
     </article>
   </main>
 
-  <!-- Footer — DO NOT EDIT -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2025 Ruxar. All rights reserved.</p>
+      <p>© 2014–2026 Ruxar. All rights reserved.</p>
       <nav>
+        <a href="/">Home</a>
         <a href="/blog/">Blog</a>
-        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener">Steam</a>
+        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
+        <a href="/sitemap.xml">Sitemap</a>
       </nav>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('[data-track="steam-click"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        if(typeof gtag === 'function'){
+          gtag('event', 'steam_click', { game: el.getAttribute('data-game') || 'unknown', page: window.location.pathname });
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
