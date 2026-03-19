@@ -900,7 +900,7 @@ if('requestIdleCallback' in window){
     els.forEach(function(el){
       if(el.classList.contains('vis')) return;
       const r=el.getBoundingClientRect();
-      if(r.top<window.innerHeight&&r.bottom>0) el.classList.add('vis');
+      if(r.top<window.innerHeight*1.1&&r.bottom>0) el.classList.add('vis');
     });
   }
   if('IntersectionObserver' in window){
@@ -908,13 +908,21 @@ if('requestIdleCallback' in window){
       entries.forEach(function(e){
         if(e.isIntersecting){e.target.classList.add('vis');ob.unobserve(e.target);}
       });
-    },{threshold:0,rootMargin:'0px'});
+    },{threshold:0,rootMargin:'10% 0px'});
     els.forEach(function(el){ob.observe(el);});
   }
-  // Scroll fallback for iOS Safari
+  // Scroll + touch fallbacks for iOS Safari
   window.addEventListener('scroll',revealVisible,{passive:true});
+  document.addEventListener('scroll',revealVisible,{passive:true});
+  window.addEventListener('touchmove',revealVisible,{passive:true});
+  window.addEventListener('touchend',revealVisible,{passive:true});
   requestAnimationFrame(revealVisible);
-  setTimeout(revealVisible,500);
+  setTimeout(revealVisible,300);
+  setTimeout(revealVisible,800);
+  // Hard failsafe: force all visible after 2.5s if still hidden
+  setTimeout(function(){
+    els.forEach(function(el){ el.classList.add('vis'); });
+  },2500);
 })();
 </script>
 </body>
