@@ -896,15 +896,25 @@ if('requestIdleCallback' in window){
 /* SCROLL REVEAL */
 (function(){
   const els=document.querySelectorAll('.rv');
-  const ob=new IntersectionObserver(en=>{
-    en.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('vis'),i*90);ob.unobserve(e.target);}});
-  },{threshold:0,rootMargin:'0px 0px -40px 0px'});
-  els.forEach(el=>ob.observe(el));
-  // Fallback: reveal any .rv already in viewport after a frame
-  requestAnimationFrame(()=>els.forEach(el=>{
-    const r=el.getBoundingClientRect();
-    if(r.top<window.innerHeight&&r.bottom>0) el.classList.add('vis');
-  }));
+  function revealVisible(){
+    els.forEach(function(el){
+      if(el.classList.contains('vis')) return;
+      const r=el.getBoundingClientRect();
+      if(r.top<window.innerHeight&&r.bottom>0) el.classList.add('vis');
+    });
+  }
+  if('IntersectionObserver' in window){
+    const ob=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('vis');ob.unobserve(e.target);}
+      });
+    },{threshold:0,rootMargin:'0px'});
+    els.forEach(function(el){ob.observe(el);});
+  }
+  // Scroll fallback for iOS Safari
+  window.addEventListener('scroll',revealVisible,{passive:true});
+  requestAnimationFrame(revealVisible);
+  setTimeout(revealVisible,500);
 })();
 </script>
 </body>
