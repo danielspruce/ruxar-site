@@ -33,7 +33,7 @@
         "image": "https://cdn.akamai.steamstatic.com/steam/apps/1452790/header.jpg",
         "genre": ["Platformer", "Precision Platformer", "Indie"],
         "gamePlatform": ["PC", "Steam"],
-        "operatingSystem": ["Windows", "macOS", "Linux"],
+        "operatingSystem": "Windows",
         "applicationCategory": "Game",
         "author": { "@type": "Organization", "name": "Ruxar", "url": "https://ruxar.com" },
         "publisher": { "@type": "Organization", "name": "Ruxar", "url": "https://ruxar.com" },
@@ -128,7 +128,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdn.akamai.steamstatic.com" />
+  <link rel="preconnect" href="https://shared.akamai.steamstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 
   <style>
@@ -174,6 +174,10 @@
     .game-img-wrap img { width:100%;display:block;filter:saturate(.8) brightness(.85); }
     .game-img-wrap:hover img { filter:saturate(1) brightness(.95); }
 
+    .screenshots { padding:80px 0;border-bottom:1px solid var(--border); }
+    .ss-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:3px; }
+    .ss-grid img { width:100%;display:block;aspect-ratio:16/9;object-fit:cover;filter:saturate(.7) brightness(.75);transition:filter .4s; }
+    .ss-grid img:hover { filter:saturate(1) brightness(.9); }
     .features { padding:80px 0;border-bottom:1px solid var(--border); }
     .section-label { font-size:.58rem;letter-spacing:.4em;text-transform:uppercase;color:var(--cyan);margin-bottom:12px; }
     .section-title { font-family:var(--font-d);font-size:clamp(1.2rem,3vw,1.7rem);font-weight:700;color:var(--white);margin-bottom:48px; }
@@ -269,6 +273,22 @@
           <div class="game-img-wrap">
             <img src="https://cdn.akamai.steamstatic.com/steam/apps/1452790/header.jpg?t=1708106639" alt="iZBOT 2 – precision platformer sequel on Steam, expanded levels and new mechanics" loading="eager" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section class="screenshots">
+      <div class="c">
+        <p class="section-label">Screenshots</p>
+        <h2 class="section-title">See what <em>awaits you.</em></h2>
+        <div class="ss-grid">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1452790/ss_b25f65e8e70aa3b4d59f3387629531ac50ee0b2e.600x338.jpg" alt="iZBOT 2 gameplay screenshot – expanded precision platformer levels" loading="lazy" />
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1452790/ss_e85370de1371f4565819bdf8f31aafb83d27abac.600x338.jpg" alt="iZBOT 2 gameplay screenshot – new mechanics and hazards" loading="lazy" />
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1452790/ss_8b26dec663e63980738475080d5bf47d48afbbbe.600x338.jpg" alt="iZBOT 2 gameplay screenshot – tight controls and instant deaths" loading="lazy" />
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1452790/ss_1b4b6f3b6bc41dadc05db8a505a48c2bc6df55f9.600x338.jpg" alt="iZBOT 2 gameplay screenshot – challenging platformer stage" loading="lazy" />
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1452790/ss_d748589f2c77840c5ac38509334516713fe77f96.600x338.jpg" alt="iZBOT 2 gameplay screenshot – precision platformer sequel" loading="lazy" />
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1452790/ss_bc8ba4a6c152321c1a425ac38b082a1ed76a89ae.600x338.jpg" alt="iZBOT 2 gameplay screenshot – harder than the original iZBOT" loading="lazy" />
         </div>
       </div>
     </section>
@@ -401,7 +421,8 @@
         <a href="/blog/">Blog</a>
         <a href="/games/izbot/">iZBOT</a>
         <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
-        <a href="/sitemap.xml">Sitemap</a>
+        <a href="/press/">Press</a>
+      <a href="/sitemap.xml">Sitemap</a>
       </nav>
     </div>
   </footer>
