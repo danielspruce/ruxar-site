@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0c10" />
+
+  <title>AI Art and Game Dev – An Honest Take | Ruxar</title>
+  <meta name="description" content="An indie developer's honest assessment of AI art tools for game development — what they're useful for, where they fall short, and the real controversy around using them." />
+  <link rel="canonical" href="https://ruxar.com/aiart/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ruxar.com/aiart/" />
+  <meta property="og:title" content="AI Art and Game Dev – An Honest Take" />
+  <meta property="og:description" content="An indie developer's honest assessment of AI art tools for game development — what they're useful for, where they fall short, and the real controversy around using them." />
+  <meta property="og:image" content="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388970/header.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI Art and Game Dev – An Honest Take",
+    "description": "An indie developer's honest assessment of AI art tools for game development — what they're useful for, where they fall short, and the real controversy around using them.",
+    "datePublished": "2026-03-20",
+    "dateModified": "2026-03-20",
+    "author": {
+      "@type": "Person",
+      "name": "Daniel Spruce",
+      "url": "https://ruxar.com/",
+      "sameAs": ["https://www.gamedeveloper.com/author/daniel-spruce"]
+    },
+    "publisher": { "@type": "Organization", "name": "Ruxar", "url": "https://ruxar.com" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ruxar.com/aiart/" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruxar.com/" },
+      { "@type": "ListItem", "position": 2, "name": "AI Art and Game Dev", "item": "https://ruxar.com/aiart/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Should indie developers use AI art in their games?",
+        "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you're using it for and how transparent you are about it. AI tools can be genuinely useful for concepting, mood boards, and placeholder art during development. Using AI-generated assets in a shipped commercial game is more controversial — the game development community has strong feelings about it, Steam requires disclosure, and the legal status of training data is still being contested in courts. If you're using AI art commercially, disclose it and be prepared for some players to care." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is AI-generated art allowed on Steam?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, with disclosure. Valve updated its policies in 2023 to require developers to disclose the use of AI-generated content (both live-generated and pre-generated) during the submission process. Games using AI art without disclosure risk being removed. The rules are still evolving — check Steamworks documentation for the current requirements before submitting." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is AI art actually good for in game development?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Concepting and mood boarding (generating visual references before commissioning real art), texture generation for 3D assets, placeholder art during early development, background elements with low visual importance, and rapid prototyping. It's less reliable for main characters, UI, or anything that needs to look consistent across many frames or angles." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-78K4X5VXDG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-78K4X5VXDG');
+  </script>
+
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="../ruxar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">
+        <img src="../img/logo.png" alt="Ruxar – Australian Indie Game Studio" height="32" />
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/">Games</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="article-wrap" itemscope itemtype="https://schema.org/Article">
+
+      <a href="/" class="back-link">← Home</a>
+
+      <div class="article-meta">
+        <span class="article-tag">Opinion</span>
+        <time class="article-date" datetime="2026-03-20" itemprop="datePublished">March 20, 2026</time>
+      </div>
+
+      <h1 itemprop="headline">AI Art and Game Dev – An Honest Take</h1>
+
+      <p class="article-intro">AI art tools are everywhere now. Every few weeks there's a new model, a new controversy, or a new game studio announcing they're using them. Here's an honest look at what they're actually useful for in game development — and what the noise obscures.</p>
+
+      <div class="article-body" itemprop="articleBody">
+
+        <h2>What AI Art Tools Exist</h2>
+        <p>The main tools in 2025 are Midjourney (Discord-based, subscription, high output quality), Stable Diffusion (open source, run locally or via services like Automatic1111/ComfyUI), DALL-E 3 (integrated into ChatGPT Plus), Adobe Firefly (trained on licensed Adobe Stock, built into Photoshop), and Leonardo.ai (game-asset-focused, free tier available). These tools can generate images from text prompts in seconds. Some can also do image-to-image transformation (modifying an existing image) and inpainting (replacing specific parts of an image).</p>
+
+        <h2>What They're Actually Useful For in Game Dev</h2>
+        <p>Let's be specific, because the answer varies a lot by use case.</p>
+
+        <h3>Concepting and Mood Boards</h3>
+        <p>This is where AI tools shine in game development. If you're early in a project and trying to establish an art direction, generating 50 reference images in 20 minutes beats describing your vision with words. You're not using the output — you're using it as a communication tool for artists or as a visual reference for yourself.</p>
+
+        <h3>Texture Generation</h3>
+        <p>For 3D games especially, AI tools can generate tileable textures for environments quickly. Tools like Stable Diffusion with specific settings can produce stone, wood, concrete, and organic textures that work well as a base for manual cleanup.</p>
+
+        <h3>Placeholder Art</h3>
+        <p>During prototyping, you need something in the game to understand how it feels. AI-generated placeholders can fill that role — fast, good enough to iterate against, thrown away before shipping.</p>
+
+        <h3>Background Elements with Low Visual Importance</h3>
+        <p>A distant cityscape, a decorative border, a pattern on a wall that the player never looks at closely — these are lower-stakes uses where AI-generated art causes less friction.</p>
+
+        <h2>Where AI Art Falls Short</h2>
+
+        <h3>Character Consistency</h3>
+        <p>If your main character needs to look the same from multiple angles, in multiple poses, across 80 animation frames — AI tools cannot do this reliably. The outputs are inconsistent in ways that break the illusion of a coherent game world. This is improving, but as of 2025 it's still a significant limitation.</p>
+
+        <h3>Specific Art Styles</h3>
+        <p>If you want art that looks like your game's established visual identity, AI tools struggle to replicate it consistently. They can approximate influences, but they're poor at "more of this specific thing I already have."</p>
+
+        <h3>UI and Readable Elements</h3>
+        <p>Buttons, menus, HUDs, text overlays — AI tools are unreliable here. Generated UI often has placeholder-looking text, inconsistent sizing, and visual noise that makes the interface harder to read, not easier.</p>
+
+        <h3>Anything That Needs Iteration Feedback</h3>
+        <p>AI tools give you outputs, not process. If you say "the character's left arm looks wrong," you can't fix just the arm — you generate a new image and hope. A real artist makes targeted revisions. This makes AI art expensive in a different way: revision cycles.</p>
+
+        <h2>The Controversy — What It's Actually About</h2>
+        <p>The objection to AI art in games isn't only aesthetic. The training data issue is real: most major AI art models were trained on billions of images scraped from the internet, including images by artists who did not consent to their work being used for training. The legal status of this is being contested in courts in multiple countries, and the outcome is genuinely uncertain.</p>
+        <p>There's also a livelihood argument: every dollar spent on AI-generated art is potentially a dollar that doesn't go to a human artist. In an industry where concept artists and 2D game artists are already in a precarious freelance market, that matters to many people.</p>
+        <p>Steam's policy of requiring disclosure is a partial response to this — it lets players make informed choices. But the policy doesn't address the training data question.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Should indie developers use AI art in their games?</h3>
+        <p>It depends on what you're using it for and how transparent you are about it. AI tools can be genuinely useful for concepting, mood boards, and placeholder art during development. Using AI-generated assets in a shipped commercial game is more controversial — the game development community has strong feelings about it, Steam requires disclosure, and the legal status of training data is still being contested in courts. If you're using AI art commercially, disclose it and be prepared for some players to care.</p>
+
+        <h3>Is AI-generated art allowed on Steam?</h3>
+        <p>Yes, with disclosure. Valve updated its policies in 2023 to require developers to disclose the use of AI-generated content (both live-generated and pre-generated) during the submission process. Games using AI art without disclosure risk being removed. The rules are still evolving — check Steamworks documentation for the current requirements before submitting.</p>
+
+        <h3>What is AI art actually good for in game development?</h3>
+        <p>Concepting and mood boarding (generating visual references before commissioning real art), texture generation for 3D assets, placeholder art during early development, background elements with low visual importance, and rapid prototyping. It's less reliable for main characters, UI, or anything that needs to look consistent across many frames or angles.</p>
+
+        <h2>The Honest Verdict</h2>
+        <p>AI art tools are useful in game development for specific tasks — concepting, placeholders, textures, reference generation. Treating them as a replacement for commissioned or in-house art for a commercial game is a different question, with real trade-offs in quality, consistency, community reception, and ethics.</p>
+        <p>iZBOT uses hand-crafted art. That wasn't because AI tools didn't exist — it was because the specific visual identity of the game came from human decisions about what to draw, how to draw it, and what to leave out. That kind of authorship doesn't come from a prompt.</p>
+        <p>If you're considering commissioned art as an alternative, see our guide to <a href="/game-art-commissions/">how to commission game art for your indie game</a>.</p>
+
+        <div class="cta-box">
+          <h3>iZBOT — Hand-Crafted Art on Steam</h3>
+          <p>iZBOT is a precision platformer with custom art, built by one developer at Ruxar. Available on Steam for $9.99.</p>
+          <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38l3.03-6.25a3.5 3.5 0 0 1-.73-.38 3.5 3.5 0 0 1-1.5-2.88 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-.15l-2.9 6.03C10.8 23.94 11.4 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm-4.5 14.5a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2zm10-5a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+            Play iZBOT on Steam – $9.99
+          </a>
+        </div>
+
+        <div class="related-reading" style="margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+          <h2>Related Reading</h2>
+          <ul>
+            <li><a href="/game-art-commissions/">How to Commission Game Art for Your Indie Game</a></li>
+            <li><a href="/games/izbot/">iZBOT – Precision Platformer on Steam</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="article-footer-nav">
+        <a href="/" class="back-link">← Home</a>
+        <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">Play iZBOT on Steam – $9.99</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2014–2026 Ruxar. All rights reserved.</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
+        <a href="/press/">Press</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-track="steam-click"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        if(typeof gtag === 'function'){
+          gtag('event', 'steam_click', { game: el.getAttribute('data-game') || 'unknown', page: window.location.pathname });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
