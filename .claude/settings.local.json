@@ -16,7 +16,8 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:store.steampowered.com)"
     ]
   }
 }
