@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Strip legacy WordPress/Wordfence query-string URLs (?ND, ?s=, ?wordfence_lh=…)
+       and redirect to the canonical homepage. Fires before any content renders. -->
+  <script>if(window.location.search)window.location.replace('https://ruxar.com/');</script>
   <title>iZBOT – Indie Precision Platformer on Steam | Ruxar</title>
   <meta name="description" content="iZBOT is a fast-paced precision platformer by Australian indie studio Ruxar. Guide a nimble robot through hazard-filled levels. Play iZBOT and iZBOT 2 on Steam." />
   <link rel="canonical" href="https://ruxar.com/" />
