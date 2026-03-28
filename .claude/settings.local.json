@@ -17,7 +17,10 @@
       "Bash(git commit:*)",
       "mcp__Claude_Preview__preview_start",
       "Bash(git push:*)",
-      "WebFetch(domain:store.steampowered.com)"
+      "WebFetch(domain:store.steampowered.com)",
+      "Bash(/c/Users/spruc/Documents/GitHub/ruxar-site/izbot/index.html:*)",
+      "Bash(mkdir -p C:/Users/spruc/Documents/GitHub/ruxar-site/img/photomosaica)",
+      "Bash(mkdir -p C:/Users/spruc/Documents/GitHub/ruxar-site/photomosaica)"
     ]
   }
 }
