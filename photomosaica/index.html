@@ -356,36 +356,38 @@
       font-size: 0.8rem;
       letter-spacing: 0.05em;
       text-transform: uppercase;
+      width: 50%;
     }
 
     .compare-table th:first-child {
-      background: #fee2e2;
-      color: #b91c1c;
+      background: var(--blue);
+      color: #fff;
       border-radius: 8px 0 0 0;
     }
 
     .compare-table th:last-child {
-      background: var(--blue);
-      color: #fff;
+      background: #fee2e2;
+      color: #b91c1c;
       border-radius: 0 8px 0 0;
     }
 
     .compare-table td {
       padding: 14px 20px;
       border-bottom: 1px solid var(--border);
+      width: 50%;
     }
 
     .compare-table tr:last-child td { border-bottom: none; }
 
     .compare-table td:first-child {
-      background: #fff5f5;
-      color: #6b7280;
-    }
-
-    .compare-table td:last-child {
       background: var(--bg-alt2);
       color: var(--text);
       font-weight: 500;
+    }
+
+    .compare-table td:last-child {
+      background: #fff5f5;
+      color: #6b7280;
     }
 
     .bad { color: #ef4444; margin-right: 6px; }
@@ -719,26 +721,26 @@
       <table class="compare-table">
         <thead>
           <tr>
-            <th>Typical Online Tools</th>
             <th>Photomosaica</th>
+            <th>Typical Online Tools</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><span class="bad">✗</span> Subscription fees</td>
             <td><span class="good">✓</span> One-time purchase</td>
+            <td><span class="bad">✗</span> Subscription fees</td>
           </tr>
           <tr>
-            <td><span class="bad">✗</span> Upload your photos to their servers</td>
             <td><span class="good">✓</span> Works fully offline</td>
+            <td><span class="bad">✗</span> Upload your photos to their servers</td>
           </tr>
           <tr>
-            <td><span class="bad">✗</span> AI image analysis &amp; data collection</td>
             <td><span class="good">✓</span> No AI or scanning</td>
+            <td><span class="bad">✗</span> AI image analysis &amp; data collection</td>
           </tr>
           <tr>
-            <td><span class="bad">✗</span> Limited printing options</td>
             <td><span class="good">✓</span> Export &amp; print anywhere</td>
+            <td><span class="bad">✗</span> Limited printing options</td>
           </tr>
         </tbody>
       </table>
@@ -792,15 +794,15 @@
     <div class="use-cases-grid">
       <div class="use-card">
         <div class="use-card-img">
-          <img src="/img/photomosaica/hero.jpg" alt="Large photo mosaic used as a wedding gift hung on the wall" width="400" height="300" />
+          <img src="/img/photomosaica/family.jpg" alt="Custom photo mosaic birthday card with puppy portrait made from tiles" width="400" height="300" />
         </div>
-        <div class="use-card-caption">Wedding Gifts</div>
+        <div class="use-card-caption">Custom Cards</div>
       </div>
       <div class="use-card">
         <div class="use-card-img">
-          <img src="/img/photomosaica/family.jpg" alt="Family portrait photo mosaic displayed in the home" width="400" height="300" />
+          <img src="/img/photomosaica/hero.jpg" alt="Large photo mosaic used as a wedding gift hung on the wall" width="400" height="300" />
         </div>
-        <div class="use-card-caption">Family Portraits</div>
+        <div class="use-card-caption">Wedding Gifts</div>
       </div>
       <div class="use-card">
         <div class="use-card-img">
