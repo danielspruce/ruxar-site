@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found – Ruxar</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0a0c10" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{
+      --bg:#05070d;--bg2:#080c15;
+      --cyan:#00f5c8;--cyan-glow:rgba(0,245,200,.4);
+      --orange:#ff5e1a;--white:#eef2f7;--muted:#6a7f9e;
+      --border:rgba(0,245,200,.12);
+      --font-d:'Orbitron',monospace;--font-b:'DM Mono',monospace;
+    }
+    body{background:var(--bg);color:var(--white);font-family:var(--font-b);min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased;}
+    header{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid var(--border);}
+    .logo{font-family:var(--font-d);font-size:1rem;font-weight:900;letter-spacing:.18em;color:var(--cyan);text-decoration:none;text-shadow:0 0 20px var(--cyan-glow);}
+    .logo-x{color:var(--orange);}
+    main{flex:1;display:flex;align-items:center;justify-content:center;padding:60px 36px;}
+    .wrap{max-width:560px;text-align:center;}
+    .code{font-family:var(--font-d);font-size:clamp(4rem,15vw,8rem);font-weight:900;color:transparent;-webkit-text-stroke:2px rgba(0,245,200,.35);line-height:1;margin-bottom:8px;letter-spacing:.06em;}
+    .msg{font-family:var(--font-d);font-size:clamp(.9rem,2.5vw,1.2rem);font-weight:700;color:var(--white);margin-bottom:16px;letter-spacing:.04em;}
+    .sub{font-size:.82rem;color:var(--muted);line-height:1.8;margin-bottom:48px;}
+    .links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;font-family:var(--font-d);font-size:.58rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;transition:box-shadow .2s,background .2s;}
+    .bp{background:var(--cyan);color:var(--bg);}
+    .bp:hover{box-shadow:0 0 24px var(--cyan-glow);}
+    .bs{background:transparent;color:var(--cyan);border:1px solid rgba(0,245,200,.35);}
+    .bs:hover{background:rgba(0,245,200,.06);}
+    footer{padding:28px 40px;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;}
+    .fc{font-size:.58rem;color:var(--muted);letter-spacing:.1em;}
+    .fl{display:flex;gap:20px;flex-wrap:wrap;}
+    .fl a{font-size:.55rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
+    .fl a:hover{color:var(--white);}
+    @media(max-width:580px){header{padding:0 20px;}footer{padding:24px 20px;}}
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo" aria-label="Ruxar – Home">RU<span class="logo-x">X</span>AR</a>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="code">404</p>
+    <p class="msg">Level not found.</p>
+    <p class="sub">This page doesn't exist — or it moved. Try one of the links below, or head back to the homepage.</p>
+    <div class="links">
+      <a href="/" class="btn bp">← Home</a>
+      <a href="/games/izbot/" class="btn bs">iZBOT</a>
+      <a href="/games/izbot-2/" class="btn bs">iZBOT 2</a>
+      <a href="/blog/" class="btn bs">Blog</a>
+      <a href="/press/" class="btn bs">Press</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p class="fc">© 2014–2026 Ruxar — Australian Independent Game Studio</p>
+  <nav class="fl" aria-label="Footer navigation">
+    <a href="/">Home</a>
+    <a href="/games/izbot/">iZBOT</a>
+    <a href="/games/izbot-2/">iZBOT 2</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/press/">Press</a>
+    <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
+  </nav>
+</footer>
+
+</body>
+</html>

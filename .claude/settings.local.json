@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip -l \"/g/Users/spruc/Downloads/favicon.zip\")",
+      "Read(//g/Users/spruc/Downloads/**)",
+      "Bash(unzip -o favicon.zip -d favicon_extracted)",
+      "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/favicon.ico\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/favicon.ico\")",
+      "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/site.webmanifest\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/site.webmanifest\")",
+      "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/favicon-96x96.png\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/img/favicon-96x96.png\")",
+      "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/apple-touch-icon.png\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/img/apple-touch-icon.png\")",
+      "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/favicon.svg\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/img/favicon.svg\")",
+      "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/web-app-manifest-192x192.png\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/img/web-app-manifest-192x192.png\")",
+      "Bash(cp \"/g/Users/spruc/Downloads/favicon_extracted/web-app-manifest-512x512.png\" \"/c/Users/spruc/Documents/GitHub/ruxar-site/img/web-app-manifest-512x512.png\")",
+      "Bash(xargs sed:*)",
+      "Bash(git pull:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git push:*)",
+      "WebFetch(domain:store.steampowered.com)",
+      "Bash(/c/Users/spruc/Documents/GitHub/ruxar-site/izbot/index.html:*)",
+      "Bash(mkdir -p C:/Users/spruc/Documents/GitHub/ruxar-site/img/photomosaica)",
+      "Bash(mkdir -p C:/Users/spruc/Documents/GitHub/ruxar-site/photomosaica)"
+    ]
+  }
+}

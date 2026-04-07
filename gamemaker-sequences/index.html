@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0c10" />
+
+  <title>GameMaker Sequences Tutorial – Animation Without Code | Ruxar</title>
+  <meta name="description" content="A practical guide to GameMaker Sequences — what they are, how to use them, and when they're better than manual GML animation. From an indie dev who used them in iZBOT." />
+  <link rel="canonical" href="https://ruxar.com/gamemaker-sequences/" />
+
+  <!-- Open Graph (Facebook/Discord previews) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ruxar.com/gamemaker-sequences/" />
+  <meta property="og:title" content="GameMaker Sequences Tutorial – Animation Without Code" />
+  <meta property="og:description" content="A practical guide to GameMaker Sequences — what they are, how to use them, and when they're better than manual GML animation. From an indie dev who used them in iZBOT." />
+  <meta property="og:image" content="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "GameMaker Sequences Tutorial – Animation Without Code",
+    "description": "A practical guide to GameMaker Sequences — what they are, how to use them, and when they're better than manual GML animation. From an indie dev who used them in iZBOT.",
+    "datePublished": "2026-03-20",
+    "dateModified": "2026-03-20",
+    "author": {
+      "@type": "Person",
+      "name": "Daniel Spruce",
+      "url": "https://ruxar.com/",
+      "sameAs": ["https://www.gamedeveloper.com/author/daniel-spruce"]
+    },
+    "publisher": { "@type": "Organization", "name": "Ruxar", "url": "https://ruxar.com" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ruxar.com/gamemaker-sequences/" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruxar.com/" },
+      { "@type": "ListItem", "position": 2, "name": "GameMaker Sequences", "item": "https://ruxar.com/gamemaker-sequences/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are GameMaker Sequences?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sequences are GameMaker's built-in animation and timeline tool, introduced in GameMaker Studio 2.3. They let you create complex animations, cutscenes, and UI transitions visually — moving sprites, changing properties, and triggering events over time — without writing GML code for every keyframe." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do you create a Sequence in GameMaker?",
+        "acceptedAnswer": { "@type": "Answer", "text": "In the GameMaker IDE, go to the Asset Browser, right-click, and select Create > Sequence. The Sequence editor opens a timeline where you add tracks for sprites, objects, audio, and properties. Set keyframes by moving the playhead and editing values. Add the Sequence to a room or create it in code with layer_sequence_create()." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are GameMaker Sequences better than animated sprites?",
+        "acceptedAnswer": { "@type": "Answer", "text": "For complex multi-element animations — cutscenes, UI reveals, animated menus — Sequences are much better. For simple looping sprite animations (a character's walk cycle), animated sprites are still the right tool. Use Sequences when you need to coordinate multiple objects or properties over a fixed timeline." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-78K4X5VXDG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-78K4X5VXDG');
+  </script>
+
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="../ruxar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">
+        <img src="../img/logo.png" alt="Ruxar – Australian Indie Game Studio" height="32" />
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/">Games</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="article-wrap" itemscope itemtype="https://schema.org/Article">
+
+      <a href="/" class="back-link">← Home</a>
+
+      <div class="article-meta">
+        <span class="article-tag">Guide</span>
+        <time class="article-date" datetime="2026-03-20" itemprop="datePublished">March 20, 2026</time>
+      </div>
+
+      <h1 itemprop="headline">GameMaker Sequences – Animation Without Writing Code</h1>
+
+      <p class="article-intro">GameMaker Sequences let you build cutscenes, animated menus, and multi-object transitions without writing GML for every frame. Here's how to use them — and when they're worth it.</p>
+
+      <div class="article-body" itemprop="articleBody">
+
+        <h2>What Are Sequences?</h2>
+        <p>Introduced in GameMaker Studio 2.3, Sequences are a visual timeline editor built into the GameMaker IDE. Before Sequences, if you wanted to animate multiple objects together — say, a title screen where text slides in, a logo fades up, and a sound plays — you'd write a state machine or a chain of alarms in GML. It worked, but it was tedious to time and painful to tweak.</p>
+        <p>Sequences change that. You open the Sequence editor, add tracks for sprites, objects, sound, and instance properties, and place keyframes visually on a timeline. The result is a reusable animation asset you can drop into any room or trigger in code.</p>
+
+        <h2>Creating Your First Sequence (Step by Step)</h2>
+        <ol>
+          <li>In the Asset Browser, right-click and choose <strong>Create &gt; Sequence</strong>.</li>
+          <li>The Sequence editor opens. Set your canvas size (matches your room, usually).</li>
+          <li>Click the <strong>+</strong> button to add a track. Choose a sprite or object asset.</li>
+          <li>Move the playhead to a time position. Change a property (x, y, alpha, scale, rotation). GameMaker automatically creates a keyframe.</li>
+          <li>Move to another time position. Change the property again. A second keyframe is created, and GameMaker interpolates between them.</li>
+          <li>Add an <strong>Audio track</strong> the same way — drag an audio asset in and set the playback time.</li>
+          <li>Add a <strong>Broadcast Message track</strong> to fire events (like signalling that the Sequence has ended).</li>
+          <li>Preview it in the editor. Adjust keyframes by dragging them on the timeline.</li>
+          <li>Add it to a room via the Room Editor's Layer panel, or create it in code: <code>layer_sequence_create(layer_id, x, y, seq_MySequence)</code>.</li>
+        </ol>
+
+        <h2>Key Concepts</h2>
+        <p><strong>Tracks:</strong> A track represents one thing being animated — a sprite instance, a sound, an object, or a property like camera zoom. You can have as many tracks as needed.</p>
+        <p><strong>Keyframes:</strong> Each keyframe stores a value at a specific time. Between keyframes, GameMaker interpolates the value (linear by default, but you can change the curve in the Keyframe editor).</p>
+        <p><strong>Broadcast Messages:</strong> These are events fired at a specific time in the Sequence. Subscribe to them in object code with <code>broadcast_message_received</code> or through the Sequence's event editor. Useful for triggering game logic when an animation reaches a certain point.</p>
+        <p><strong>Moment Events:</strong> Similar to broadcast messages but fired every step the playhead crosses a specific frame. Good for sound effects or particle bursts at exact moments.</p>
+
+        <h2>What Sequences Are Good For</h2>
+        <ul>
+          <li>Cutscenes and story moments</li>
+          <li>Animated title/splash screens</li>
+          <li>UI reveals and transitions (level complete screens, menus)</li>
+          <li>Tutorial overlays with timed arrows and text</li>
+          <li>Camera pans tied to specific story beats</li>
+        </ul>
+        <p>In iZBOT, Sequences handled several of the game's animated moments — elements that would otherwise have required careful alarm timing and state tracking in GML. The ability to drag keyframes and preview the result immediately saved a significant amount of iteration time.</p>
+
+        <h2>What to Use Animated Sprites for Instead</h2>
+        <p>Sequences are overkill for a character's walk cycle or idle animation. For simple looping animations on a single sprite, the standard Sprite Editor with multiple frames is faster and more memory-efficient. Use animated sprites for anything that loops continuously — use Sequences for anything with a distinct start, middle, and end.</p>
+        <p>A good rule of thumb: if the animation involves only one sprite and loops indefinitely, use an animated sprite. If it involves multiple elements, plays once, or needs to trigger logic at specific points, use a Sequence.</p>
+
+        <h2>Sequences vs Manual GML Animation</h2>
+        <p>Before Sequences, triggering timed animation events meant alarm chains, counters, and state machines. A 10-second intro cutscene could need 100+ lines of GML. The same thing in a Sequence takes 10 minutes in the editor. When you need to adjust timing, you drag keyframes instead of hunting through code.</p>
+        <p>The trade-off: Sequences have some overhead and are less flexible than pure GML for highly conditional logic. If an animation needs to respond dynamically to gameplay state mid-play, you may still need GML. For a fixed-timeline animation, Sequences win every time.</p>
+
+        <h2>Common Gotchas</h2>
+        <ul>
+          <li>Sequences run at the room's speed (frames per second), not independently. If you change room speed, your Sequence timing changes.</li>
+          <li>Destroying the layer a Sequence is on will destroy the Sequence. Store the <code>layer_element_id</code> if you need a reference.</li>
+          <li>Looping is controlled by the Sequence's Playback property (one-shot, loop, pingpong). Set it in the editor, not in code, unless you use <code>layer_sequence_headdir()</code>.</li>
+        </ul>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>What are GameMaker Sequences?</h3>
+        <p>Sequences are GameMaker's built-in animation and timeline tool, introduced in GameMaker Studio 2.3. They let you create complex animations, cutscenes, and UI transitions visually — moving sprites, changing properties, and triggering events over time — without writing GML code for every keyframe.</p>
+
+        <h3>How do you create a Sequence in GameMaker?</h3>
+        <p>In the GameMaker IDE, go to the Asset Browser, right-click, and select Create &gt; Sequence. The Sequence editor opens a timeline where you add tracks for sprites, objects, audio, and properties. Set keyframes by moving the playhead and editing values. Add the Sequence to a room or create it in code with <code>layer_sequence_create()</code>.</p>
+
+        <h3>Are GameMaker Sequences better than animated sprites?</h3>
+        <p>For complex multi-element animations — cutscenes, UI reveals, animated menus — Sequences are much better. For simple looping sprite animations (a character's walk cycle), animated sprites are still the right tool. Use Sequences when you need to coordinate multiple objects or properties over a fixed timeline.</p>
+
+        <div class="cta-box">
+          <h3>Built with GameMaker — See the Result</h3>
+          <p>iZBOT is a precision platformer built in GameMaker by Australian indie studio Ruxar. If you're learning GameMaker, playing a finished game made with it is surprisingly instructive.</p>
+          <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38l3.03-6.25a3.5 3.5 0 0 1-.73-.38 3.5 3.5 0 0 1-1.5-2.88 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-.15l-2.9 6.03C10.8 23.94 11.4 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm-4.5 14.5a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2zm10-5a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+            Play iZBOT on Steam – $9.99
+          </a>
+        </div>
+
+        <div class="related-reading" style="margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+          <h2>Related Reading</h2>
+          <ul>
+            <li><a href="/blog/gamemaker-should-you-buy-it/">Should You Buy GameMaker?</a></li>
+            <li><a href="/games/izbot/">iZBOT – Precision Platformer on Steam</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="article-footer-nav">
+        <a href="/" class="back-link">← Home</a>
+        <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">Play iZBOT on Steam – $9.99</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2014–2026 Ruxar. All rights reserved.</p>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
+        <a href="/about/">About</a>
+      <a href="/press/">Press</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-track="steam-click"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        if(typeof gtag === 'function'){
+          gtag('event', 'steam_click', { game: el.getAttribute('data-game') || 'unknown', page: window.location.pathname });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
