@@ -40,6 +40,13 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://ruxar.com/blog/posts/games-like-celeste.html</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ADD NEW ARTICLES BELOW THIS LINE -->
   <!-- Copy the <url> block above and update the <loc> and <lastmod> -->
 
