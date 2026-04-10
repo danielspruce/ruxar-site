@@ -20,7 +20,8 @@
       "WebFetch(domain:store.steampowered.com)",
       "Bash(/c/Users/spruc/Documents/GitHub/ruxar-site/izbot/index.html:*)",
       "Bash(mkdir -p C:/Users/spruc/Documents/GitHub/ruxar-site/img/photomosaica)",
-      "Bash(mkdir -p C:/Users/spruc/Documents/GitHub/ruxar-site/photomosaica)"
+      "Bash(mkdir -p C:/Users/spruc/Documents/GitHub/ruxar-site/photomosaica)",
+      "Bash(grep -h \"href=\\\\\"/\" \"C:\\\\Users\\\\spruc\\\\Documents\\\\GitHub\\\\ruxar-site\\\\blog\\\\posts\"/*.html)"
     ]
   }
 }
