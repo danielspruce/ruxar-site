@@ -13,7 +13,7 @@
   <meta property="og:description" content="Indie game development tips, precision platformer guides, and updates from the creator of iZBOT." />
   <meta property="og:image" content="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg" />
 
-  <meta name="theme-color" content="#0a0c10" />
+  <meta name="theme-color" content="#05070d" />
 
   <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png" />
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
@@ -56,33 +56,47 @@
   <link rel="stylesheet" href="../ruxar.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <style>
+    main { padding-top: 64px; }
+    .blog-steam-cta { text-align: center; padding: 48px 0 24px; }
+    .blog-steam-cta p { margin-bottom: 16px; color: var(--muted); font-size: .82rem; }
+    .blog-steam-cta .btn { display: inline-flex; align-items: center; gap: 8px; background: #1b2838; color: #c7d5e0; border: 1px solid #2a475e; padding: 12px 24px; font-family: var(--font-d); font-size: .6rem; font-weight: 700; letter-spacing: .08em; text-decoration: none; transition: background .2s; }
+    .blog-steam-cta .btn:hover { background: #2a475e; color: #fff; }
+  </style>
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="site-logo">
-        <img src="../img/logo.png" alt="Ruxar – Australian Indie Game Studio" height="32" />
-      </a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="/">Games</a>
-        <a href="/blog/">Blog</a>
-        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener">Steam</a>
-      </nav>
-    </div>
+  <header>
+    <a href="/" class="logo" aria-label="iZBOT – Home">I<span class="logo-z">Z</span>BOT</a>
+    <nav aria-label="Main navigation">
+      <a href="/#games">Games</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/press/">Press</a>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
+  <div class="mobile-nav" aria-label="Mobile navigation">
+    <a href="/#games">Games</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/press/">Press</a>
+    <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
+  </div>
 
   <main>
     <section class="blog-hero">
-      <div class="container">
+      <div class="c">
         <p class="hero-eyebrow">Ruxar</p>
         <h1>Dev Blog</h1>
         <p>Indie game dev, platformer deep-dives, and the story behind iZBOT.</p>
       </div>
     </section>
 
-    <div class="container">
+    <div class="c">
       <div class="post-grid">
 
         <a href="posts/izbot-indie-game-postmortem.html" class="blog-card">
@@ -175,9 +189,9 @@
 
       </div>
 
-      <section class="blog-steam-cta" style="text-align:center;padding:48px 0 24px;">
-        <p style="margin-bottom:16px;opacity:0.6;">Articles from the creator of iZBOT — a precision platformer on Steam.</p>
-        <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">
+      <section class="blog-steam-cta">
+        <p>Articles from the creator of iZBOT — a precision platformer on Steam.</p>
+        <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38l3.03-6.25a3.5 3.5 0 0 1-.73-.38 3.5 3.5 0 0 1-1.5-2.88 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-.15l-2.9 6.03C10.8 23.94 11.4 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0z"/></svg>
           Play iZBOT on Steam – $9.99
         </a>
@@ -186,16 +200,16 @@
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2014–2026 Ruxar. All rights reserved.</p>
-      <nav aria-label="Footer navigation">
+  <footer>
+    <div class="c fi">
+      <p class="fc">© 2014–2026 Ruxar. All rights reserved.</p>
+      <nav aria-label="Footer navigation" class="fl">
         <a href="/">Home</a>
         <a href="/blog/">Blog</a>
-        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener">Steam</a>
         <a href="/about/">About</a>
-      <a href="/press/">Press</a>
-      <a href="/sitemap.xml">Sitemap</a>
+        <a href="/press/">Press</a>
+        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener">Steam</a>
+        <a href="/sitemap.xml">Sitemap</a>
       </nav>
     </div>
   </footer>
@@ -208,6 +222,15 @@
         }
       });
     });
+    /* Hamburger menu */
+    (function(){
+      var btn=document.querySelector('.menu-toggle');
+      if(!btn) return;
+      var nav=document.querySelector('.mobile-nav');
+      btn.addEventListener('click',function(){var open=document.body.classList.toggle('menu-open');btn.setAttribute('aria-expanded',open);});
+      nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');});});
+      document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('menu-open')){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');btn.focus();}});
+    })();
   </script>
 
 </body>

@@ -166,11 +166,25 @@
       .bio-grid{grid-template-columns:1fr;}
       .phil-grid{grid-template-columns:1fr 1fr;}
     }
+    /* MOBILE HAMBURGER */
+    .menu-toggle{display:none;background:none;border:none;cursor:pointer;width:28px;height:20px;position:relative;z-index:200;padding:0;flex-shrink:0;}
+    .menu-toggle span{display:block;width:100%;height:2px;background:var(--cyan);position:absolute;left:0;transition:transform .3s,opacity .3s,top .3s;}
+    .menu-toggle span:nth-child(1){top:0;} .menu-toggle span:nth-child(2){top:9px;} .menu-toggle span:nth-child(3){top:18px;}
+    .menu-open .menu-toggle span:nth-child(1){top:9px;transform:rotate(45deg);}
+    .menu-open .menu-toggle span:nth-child(2){opacity:0;}
+    .menu-open .menu-toggle span:nth-child(3){top:9px;transform:rotate(-45deg);}
+    .mobile-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:99;background:rgba(5,7,13,.97);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:32px;}
+    .mobile-nav a{font-family:var(--font-d);font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
+    .mobile-nav a:hover{color:var(--cyan);}
+    .mobile-nav .ncta{margin-top:16px;padding:14px 28px;font-size:.65rem !important;}
+    .menu-open .mobile-nav{display:flex;}
+
     @media(max-width:580px){
       header{padding:0 20px;}
       .c{padding:0 18px;}
       .hero{padding:80px 0 60px;}
-      nav a:not(.ncta){display:none;}
+      nav{display:none;}
+      .menu-toggle{display:block;}
       .stats-strip{grid-template-columns:1fr 1fr;}
       .phil-grid{grid-template-columns:1fr;}
     }
@@ -186,7 +200,15 @@
     <a href="/press/">Press</a>
     <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta" data-track="steam-click" data-game="ruxar">Steam ↗</a>
   </nav>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
+<div class="mobile-nav" aria-label="Mobile navigation">
+  <a href="/#games">Games</a>
+  <a href="/blog/">Blog</a>
+  <a href="/about/">About</a>
+  <a href="/press/">Press</a>
+  <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
+</div>
 
 <main>
 
@@ -318,6 +340,14 @@ document.addEventListener('click',function(e){
   var el=e.target.closest('[data-track="steam-click"]');
   if(el&&typeof gtag==='function'){gtag('event','steam_click',{game:el.dataset.game||'unknown',page:'about'});}
 });
+(function(){
+  var btn=document.querySelector('.menu-toggle');
+  if(!btn) return;
+  var nav=document.querySelector('.mobile-nav');
+  btn.addEventListener('click',function(){var open=document.body.classList.toggle('menu-open');btn.setAttribute('aria-expanded',open);});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('menu-open')){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');btn.focus();}});
+})();
 </script>
 
 </body>

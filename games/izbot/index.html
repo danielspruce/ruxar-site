@@ -179,7 +179,7 @@
     .section-title { font-family:var(--font-d);font-size:clamp(1.2rem,3vw,1.7rem);font-weight:700;color:var(--white);margin-bottom:48px; }
     .section-title em { font-style:normal;-webkit-text-stroke:1px rgba(255,94,26,.65);color:transparent; }
     .ss-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:3px; }
-    .ss-grid img { width:100%;display:block;aspect-ratio:16/9;object-fit:cover;filter:saturate(.7) brightness(.75);transition:filter .4s; }
+    .ss-grid img { width:100%;display:block;aspect-ratio:16/9;object-fit:cover;filter:saturate(.85) brightness(.88);transition:filter .4s; }
     .ss-grid img:hover { filter:saturate(1) brightness(.9); }
 
     /* FEATURES */
@@ -232,10 +232,23 @@
       .feat-grid, .ss-grid, .review-grid { grid-template-columns:1fr; }
       .also-inner { grid-template-columns:1fr; }
     }
+    /* MOBILE HAMBURGER */
+    .menu-toggle{display:none;background:none;border:none;cursor:pointer;width:28px;height:20px;position:relative;z-index:200;padding:0;flex-shrink:0;}
+    .menu-toggle span{display:block;width:100%;height:2px;background:var(--cyan);position:absolute;left:0;transition:transform .3s,opacity .3s,top .3s;}
+    .menu-toggle span:nth-child(1){top:0;} .menu-toggle span:nth-child(2){top:9px;} .menu-toggle span:nth-child(3){top:18px;}
+    .menu-open .menu-toggle span:nth-child(1){top:9px;transform:rotate(45deg);}
+    .menu-open .menu-toggle span:nth-child(2){opacity:0;}
+    .menu-open .menu-toggle span:nth-child(3){top:9px;transform:rotate(-45deg);}
+    .mobile-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:99;background:rgba(5,7,13,.97);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);flex-direction:column;align-items:center;justify-content:center;gap:32px;}
+    .mobile-nav a{font-family:var(--font-d);font-size:.75rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
+    .mobile-nav a:hover{color:var(--cyan);}
+    .mobile-nav .ncta{margin-top:16px;padding:14px 28px;font-size:.65rem !important;}
+    .menu-open .mobile-nav{display:flex;}
+
     @media(max-width:580px) {
       header { padding:0 18px; }
       .c { padding:0 18px; }
-      nav a:not(.ncta) { display:none; }
+      nav{display:none;} .menu-toggle{display:block;}
     }
   </style>
 </head>
@@ -250,7 +263,15 @@
       <a href="/blog/">Blog</a>
       <a href="https://store.steampowered.com/app/388970/iZBOT/" target="_blank" rel="noopener noreferrer" class="ncta" data-track="steam-click" data-game="izbot">Buy on Steam</a>
     </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
+  <div class="mobile-nav" aria-label="Mobile navigation">
+    <a href="/#games">Games</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/press/">Press</a>
+    <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
+  </div>
 
   <main>
 
@@ -436,6 +457,14 @@
       }
     });
   });
+(function(){
+  var btn=document.querySelector('.menu-toggle');
+  if(!btn) return;
+  var nav=document.querySelector('.mobile-nav');
+  btn.addEventListener('click',function(){var open=document.body.classList.toggle('menu-open');btn.setAttribute('aria-expanded',open);});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('menu-open')){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');btn.focus();}});
+})();
 </script>
 
 </body>
