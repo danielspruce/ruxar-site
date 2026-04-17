@@ -142,6 +142,85 @@ Before publishing, confirm:
 
 ---
 
+---
+
+## How to Add a Standalone Content Page
+
+Use this for pages that live at their own URL (e.g. `ruxar.com/my-guide/`) rather than inside the blog.
+Examples: topic guides, resource pages, landing pages.
+
+### Step 1 — Create a new folder
+
+In the root of the repo, create a new folder named with a lowercase hyphenated slug:
+
+```
+gamemaker-tips/
+izbot-tips/
+indie-dev-resources/
+```
+
+### Step 2 — Copy the template into it
+
+Copy `_PAGE-TEMPLATE.html` from the root into your new folder and rename it `index.html`:
+
+```
+gamemaker-tips/index.html
+```
+
+The filename must be `index.html` so the URL is clean (`/gamemaker-tips/` not `/gamemaker-tips/page.html`).
+
+### Step 3 — Edit the file
+
+Open `index.html` in your editor and follow the `<!-- STEP -->` comments:
+
+| What | Where |
+|------|-------|
+| `<title>` tag | Line ~13 |
+| `<meta name="description">` | Line ~14 |
+| `<link rel="canonical">` | Replace `YOUR-PAGE-SLUG` with your folder name |
+| `og:url`, `og:title`, `og:description` | OG meta tags |
+| JSON-LD `"headline"`, `"description"`, `"datePublished"` | Script block |
+| Breadcrumb position 2 name and URL | Second JSON-LD script block |
+| Article tag + date | `<div class="article-meta">` |
+| `<h1>` title | Main heading |
+| Intro paragraph | `<p class="article-intro">` |
+| Body sections | `<h2>`, `<h3>`, `<p>` blocks |
+| CTA box | `<div class="cta-box">` |
+| Related reading links | `<div class="related-reading">` |
+
+**Key difference from blog posts:** The CSS path is `../ruxar.css` (one level up, not two).
+
+### Step 4 — Update the Sitemap
+
+Open `sitemap.xml` and add a new `<url>` block:
+
+```xml
+<url>
+  <loc>https://ruxar.com/YOUR-PAGE-SLUG/</loc>
+  <lastmod>YYYY-MM-DD</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+```
+
+### Step 5 — Link to it from somewhere
+
+Standalone pages won't get traffic unless something links to them. Pick one or more:
+
+- Add a card to the blog index (`blog/index.html`) pointing to `/YOUR-PAGE-SLUG/`
+- Add a link in a related blog post's **Related Reading** section
+- Add it to the footer nav in `ruxar.css` or individual page footers
+
+### Step 6 — Commit and push
+
+```bash
+git add .
+git commit -m "Add content page: Your Page Title"
+git push
+```
+
+---
+
 ## File Structure
 
 ```

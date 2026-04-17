@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0c10" />
+
+  <!-- ============================================================
+       STEP 1: SEO details.
+       Replace every ALL CAPS placeholder with your real content.
+       YOUR-PAGE-SLUG = the folder name you created, e.g. "gamemaker-tips"
+       ============================================================ -->
+
+  <title>YOUR PAGE TITLE HERE | Ruxar</title>
+  <meta name="description" content="YOUR META DESCRIPTION — 1-2 sentences summarising the page. Aim for 140-160 characters. This text shows in Google search results." />
+  <link rel="canonical" href="https://ruxar.com/YOUR-PAGE-SLUG/" />
+
+  <!-- Open Graph (Facebook/Discord link previews) -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ruxar.com/YOUR-PAGE-SLUG/" />
+  <meta property="og:title" content="YOUR PAGE TITLE HERE" />
+  <meta property="og:description" content="YOUR META DESCRIPTION" />
+  <meta property="og:image" content="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg" />
+
+  <!-- ============================================================
+       STEP 2: Structured data (tells Google this is an article).
+       Replace ALL CAPS placeholders. Dates use YYYY-MM-DD format.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "YOUR PAGE TITLE HERE",
+    "description": "YOUR META DESCRIPTION",
+    "datePublished": "YYYY-MM-DD",
+    "dateModified": "YYYY-MM-DD",
+    "author": {
+      "@type": "Person",
+      "name": "Daniel Spruce",
+      "url": "https://ruxar.com/",
+      "sameAs": ["https://www.gamedeveloper.com/author/daniel-spruce"]
+    },
+    "publisher": { "@type": "Organization", "name": "Ruxar", "url": "https://ruxar.com" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://ruxar.com/YOUR-PAGE-SLUG/" }
+  }
+  </script>
+
+  <!-- BreadcrumbList — update position 2 name and item URL -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://ruxar.com/" },
+      { "@type": "ListItem", "position": 2, "name": "YOUR PAGE TITLE HERE", "item": "https://ruxar.com/YOUR-PAGE-SLUG/" }
+    ]
+  }
+  </script>
+
+  <!-- OPTIONAL: FAQPage schema — uncomment and fill in if the page has a visible FAQ section.
+       Each question and answer must actually appear in the page body.
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "YOUR QUESTION?",
+        "acceptedAnswer": { "@type": "Answer", "text": "YOUR ANSWER." }
+      }
+    ]
+  }
+  </script>
+  -->
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-78K4X5VXDG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-78K4X5VXDG');
+  </script>
+
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="../ruxar.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <a href="/" class="logo" aria-label="iZBOT – Home">I<span class="logo-z">Z</span>BOT</a>
+    <nav aria-label="Main navigation">
+      <a href="/#games">Games</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/press/">Press</a>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav" aria-label="Mobile navigation">
+    <a href="/#games">Games</a>
+    <a href="/blog/">Blog</a>
+    <a href="/about/">About</a>
+    <a href="/press/">Press</a>
+    <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
+  </div>
+
+  <main>
+    <article class="article-wrap" itemscope itemtype="https://schema.org/Article">
+
+      <a href="/" class="back-link">← Back to Home</a>
+
+      <!-- ============================================================
+           STEP 3: Set the tag and date.
+           Tag options: Lists | Opinion | Dev | Guide | News | Review
+           Date format for datetime: YYYY-MM-DD
+           Date format displayed: Month DD, YYYY
+           ============================================================ -->
+      <div class="article-meta">
+        <span class="article-tag">TAG HERE</span>
+        <time class="article-date" datetime="YYYY-MM-DD" itemprop="datePublished">Month DD, YYYY</time>
+      </div>
+
+      <!-- ============================================================
+           STEP 4: Your page title (H1) — should match your <title> tag
+           ============================================================ -->
+      <h1 itemprop="headline">YOUR PAGE TITLE HERE</h1>
+
+      <!-- ============================================================
+           STEP 5: Intro paragraph — shown with a coloured left border.
+           This is your hook. 2-3 sentences max.
+           ============================================================ -->
+      <p class="article-intro">YOUR HOOK / INTRO PARAGRAPH HERE. Make it compelling. This is what readers see first and what Google often uses as a snippet.</p>
+
+      <!-- ============================================================
+           STEP 6: Page body content.
+
+           Use <h2> for main sections, <h3> for subtitles within a section.
+           Use <p> for paragraphs. Use <strong> for bold text.
+           Copy the SECTION BLOCK comment as many times as you need.
+           Link to related blog posts or to iZBOT/iZBOT 2 on Steam where relevant.
+           ============================================================ -->
+      <div class="article-body" itemprop="articleBody">
+
+        <p>YOUR OPENING PARAGRAPH. Set the scene or frame the topic here.</p>
+
+        <!-- === SECTION BLOCK — copy/paste this for each section === -->
+        <h2>SECTION LABEL</h2>
+        <h3>Section Subtitle Here</h3>
+        <p>YOUR SECTION CONTENT. Keep paragraphs to 3-5 sentences. Use <strong>bold text</strong> for key points. Link to related articles or to iZBOT on Steam where it makes sense.</p>
+        <!-- === END SECTION BLOCK === -->
+
+        <!-- ============================================================
+             Call-to-action box — include at least once per page.
+             Edit the h3 and p text to match the page context.
+             ============================================================ -->
+        <div class="cta-box">
+          <h3>CTA HEADLINE</h3>
+          <p>CTA DESCRIPTION — 1-2 sentences relevant to this page.</p>
+          <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38l3.03-6.25a3.5 3.5 0 0 1-.73-.38 3.5 3.5 0 0 1-1.5-2.88 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5h-.15l-2.9 6.03C10.8 23.94 11.4 24 12 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm-4.5 14.5a2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2 2 2 0 0 0-2 2zm10-5a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+            Play iZBOT on Steam – $9.99
+          </a>
+        </div>
+
+        <!-- Related Reading — link to at least 2 other posts or pages -->
+        <div class="related-reading" style="margin-top:48px;padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);">
+          <h2>Related Reading</h2>
+          <ul>
+            <li><a href="/blog/posts/OTHER-POST.html">OTHER POST TITLE</a></li>
+            <li><a href="/blog/posts/OTHER-POST.html">OTHER POST TITLE</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="article-footer-nav">
+        <a href="/" class="back-link">← Home</a>
+        <a href="https://store.steampowered.com/app/388970/iZBOT/" class="btn btn-steam" target="_blank" rel="noopener noreferrer" data-track="steam-click" data-game="izbot">Play iZBOT on Steam – $9.99</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="c fi">
+      <p class="fc">© 2014–2026 Ruxar. All rights reserved.</p>
+      <nav aria-label="Footer navigation" class="fl">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="/press/">Press</a>
+        <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener">Steam</a>
+        <a href="/sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-track="steam-click"]').forEach(function(el){
+      el.addEventListener('click', function(){
+        if(typeof gtag === 'function'){
+          gtag('event', 'steam_click', { game: el.getAttribute('data-game') || 'unknown', page: window.location.pathname });
+        }
+      });
+    });
+    (function(){
+      var btn=document.querySelector('.menu-toggle');
+      if(!btn) return;
+      var nav=document.querySelector('.mobile-nav');
+      btn.addEventListener('click',function(){var open=document.body.classList.toggle('menu-open');btn.setAttribute('aria-expanded',open);});
+      nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');});});
+      document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('menu-open')){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');btn.focus();}});
+    })();
+  </script>
+
+</body>
+</html>
