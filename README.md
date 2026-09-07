@@ -1,5 +1,41 @@
 # Ruxar Site — Blog System Guide
 
+## Shared behaviour and verification
+
+`site.js` handles all Steam click events and mobile menu focus, Escape,
+background interaction, and resize cleanup. Keep its script include in new
+pages and avoid adding a second inline tracker or menu handler.
+The `steam_click` event includes `game`, `page`, `placement`, and `link_url`.
+Register `placement` as an event-scoped custom dimension in GA4 if needed
+for reporting by button. Steam UTMs work independently of GA4.
+
+Run `node --test tests/site.test.cjs` for script/schema validation, local
+link checks, UTM coverage, and tracking regression tests. Also check desktop
+and mobile layouts and menu keyboard navigation before publishing.
+
+Product pages defer current prices and review totals to Steam; historical
+development articles retain clearly dated prices. Do not convert Steam's
+positive-review percentage into a review score out of ten.
+
+## Steam link tracking
+
+Steam links use `utm_source=ruxar` and `utm_medium=website`. Campaigns are
+`izbot`, `izbot2`, or `ruxar` (the developer search page). `utm_content`
+identifies the source page, placement (`nav`, `cta`, `body`, or `footer`),
+and its occurrence number on that page. For example, `home-cta-1` identifies
+the homepage's first Steam CTA. Navigation numbers distinguish desktop and
+mobile links in document order.
+
+When copying either HTML template, replace every `YOUR-PAGE-SLUG` in the
+Steam URLs with the new page's unique slug. Use `&amp;` between query
+parameters in HTML. Keep structured-data URLs untagged.
+
+These tags identify website referrals, not the visitor's original acquisition
+channel. Use website analytics to distinguish Google, social, and direct
+visitors. Review game link results in Steamworks UTM Analytics; developer
+search links are tagged for consistency but should not be assumed to provide
+game-level purchase attribution.
+
 ## How to Add a New Blog Article (Windows)
 
 Publishing a new post takes about 5 minutes once you've written your content.

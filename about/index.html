@@ -198,7 +198,7 @@
     <a href="/#games">Games</a>
     <a href="/blog/">Blog</a>
     <a href="/press/">Press</a>
-    <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta" data-track="steam-click" data-game="ruxar">Steam ↗</a>
+    <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=about-nav-1" target="_blank" rel="noopener noreferrer" class="ncta" data-track="steam-click" data-game="ruxar">Steam ↗</a>
   </nav>
   <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
@@ -207,7 +207,7 @@
   <a href="/blog/">Blog</a>
   <a href="/about/">About</a>
   <a href="/press/">Press</a>
-  <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
+  <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=about-nav-2" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
 </div>
 
 <main>
@@ -241,7 +241,7 @@
           <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388970/header.jpg" alt="iZBOT on Steam" loading="lazy" />
           <div class="game-card-body">
             <p class="game-card-title">iZBOT</p>
-            <p class="game-card-meta">2015 · Windows · $9.99 · ★ Very Positive (219 reviews)</p>
+            <p class="game-card-meta">2015 · Windows · See player reviews on Steam</p>
             <p class="game-card-desc">A nimble robot. Hazard-filled levels. Tight controls, instant deaths, and one more try — always one more try. The game that started it all.</p>
             <p class="game-card-cta">View iZBOT →</p>
           </div>
@@ -250,7 +250,7 @@
           <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1452790/header.jpg" alt="iZBOT 2 on Steam" loading="lazy" />
           <div class="game-card-body">
             <p class="game-card-title">iZBOT 2</p>
-            <p class="game-card-meta">2022 · Windows · $9.99</p>
+            <p class="game-card-meta">2022 · Windows</p>
             <p class="game-card-desc">The sequel. More levels, new mechanics, and everything that made iZBOT work — pushed harder. Not for the faint-hearted.</p>
             <p class="game-card-cta">View iZBOT 2 →</p>
           </div>
@@ -329,26 +329,12 @@
       <a href="/games/izbot-2/">iZBOT 2</a>
       <a href="/blog/">Blog</a>
       <a href="/press/">Press</a>
-      <a href="https://store.steampowered.com/search/?developer=Ruxar" target="_blank" rel="noopener noreferrer">Steam</a>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=about-footer-1" target="_blank" rel="noopener noreferrer">Steam</a>
       <a href="/sitemap.xml">Sitemap</a>
     </nav>
   </div>
 </footer>
 
-<script>
-document.addEventListener('click',function(e){
-  var el=e.target.closest('[data-track="steam-click"]');
-  if(el&&typeof gtag==='function'){gtag('event','steam_click',{game:el.dataset.game||'unknown',page:'about'});}
-});
-(function(){
-  var btn=document.querySelector('.menu-toggle');
-  if(!btn) return;
-  var nav=document.querySelector('.mobile-nav');
-  btn.addEventListener('click',function(){var open=document.body.classList.toggle('menu-open');btn.setAttribute('aria-expanded',open);});
-  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');});});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.body.classList.contains('menu-open')){document.body.classList.remove('menu-open');btn.setAttribute('aria-expanded','false');btn.focus();}});
-})();
-</script>
-
+<script src="/site.js" defer></script>
 </body>
 </html>
