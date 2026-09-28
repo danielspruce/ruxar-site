@@ -23,7 +23,7 @@
     "headline": "GameMaker Sequences Tutorial – Animation Without Code",
     "description": "A practical guide to GameMaker Sequences — what they are, how to use them, and when they're better than manual GML animation. From an indie dev who used them in iZBOT.",
     "datePublished": "2026-03-20",
-    "dateModified": "2026-03-20",
+    "dateModified": "2026-09-28",
     "author": {
       "@type": "Person",
       "name": "Daniel Spruce",
@@ -119,6 +119,7 @@
       <div class="article-meta">
         <span class="article-tag">Guide</span>
         <time class="article-date" datetime="2026-03-20" itemprop="datePublished">March 20, 2026</time>
+        <span class="article-date">Updated <time datetime="2026-09-28" itemprop="dateModified">September 28, 2026</time> </span>
       </div>
 
       <h1 itemprop="headline">GameMaker Sequences – Animation Without Writing Code</h1>
@@ -139,7 +140,7 @@
           <li>Move the playhead to a time position. Change a property (x, y, alpha, scale, rotation). GameMaker automatically creates a keyframe.</li>
           <li>Move to another time position. Change the property again. A second keyframe is created, and GameMaker interpolates between them.</li>
           <li>Add an <strong>Audio track</strong> the same way — drag an audio asset in and set the playback time.</li>
-          <li>Add a <strong>Broadcast Message track</strong> to fire events (like signalling that the Sequence has ended).</li>
+          <li>Move the playhead to the frame you want, then use the <strong>Broadcast Message</strong> button to add a message at that point.</li>
           <li>Preview it in the editor. Adjust keyframes by dragging them on the timeline.</li>
           <li>Add it to a room via the Room Editor's Layer panel, or create it in code: <code>layer_sequence_create(layer_id, x, y, seq_MySequence)</code>.</li>
         </ol>
@@ -147,8 +148,8 @@
         <h2>Key Concepts</h2>
         <p><strong>Tracks:</strong> A track represents one thing being animated — a sprite instance, a sound, an object, or a property like camera zoom. You can have as many tracks as needed.</p>
         <p><strong>Keyframes:</strong> Each keyframe stores a value at a specific time. Between keyframes, GameMaker interpolates the value (linear by default, but you can change the curve in the Keyframe editor).</p>
-        <p><strong>Broadcast Messages:</strong> These are events fired at a specific time in the Sequence. Subscribe to them in object code with <code>broadcast_message_received</code> or through the Sequence's event editor. Useful for triggering game logic when an animation reaches a certain point.</p>
-        <p><strong>Moment Events:</strong> Similar to broadcast messages but fired every step the playhead crosses a specific frame. Good for sound effects or particle bursts at exact moments.</p>
+        <p><strong>Broadcast Messages:</strong> These are events fired at a specific time in the Sequence. Handle them in an object's Other &gt; Broadcast Message event, reading the message from <code>event_data[? &quot;message&quot;]</code>. Useful for triggering game logic when an animation reaches a certain point.</p>
+        <p><strong>Moment Events:</strong> A moment calls an assigned function when the playhead reaches its frame. Use it for logic tied to a particular point in the animation.</p>
 
         <h2>What Sequences Are Good For</h2>
         <ul>
@@ -168,11 +169,13 @@
         <p>Before Sequences, triggering timed animation events meant alarm chains, counters, and state machines. A 10-second intro cutscene could need 100+ lines of GML. The same thing in a Sequence takes 10 minutes in the editor. When you need to adjust timing, you drag keyframes instead of hunting through code.</p>
         <p>The trade-off: Sequences have some overhead and are less flexible than pure GML for highly conditional logic. If an animation needs to respond dynamically to gameplay state mid-play, you may still need GML. For a fixed-timeline animation, Sequences win every time.</p>
 
+        <p>For event details and examples, see the <a href="https://manual.gamemaker.io/lts/en/The_Asset_Editors/Sequence_Properties/Broadcast_Messages.htm">GameMaker manual on broadcast messages and moments</a> and the <a href="https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Asset_Management/Rooms/Sequence_Layers/layer_sequence_headdir.htm">playback direction reference</a>.</p>
+
         <h2>Common Gotchas</h2>
         <ul>
-          <li>Sequences run at the room's speed (frames per second), not independently. If you change room speed, your Sequence timing changes.</li>
+          <li>Check the Sequence's playback speed and any runtime speed scale when debugging timing. Preview the animation in the game as well as in the editor.</li>
           <li>Destroying the layer a Sequence is on will destroy the Sequence. Store the <code>layer_element_id</code> if you need a reference.</li>
-          <li>Looping is controlled by the Sequence's Playback property (one-shot, loop, pingpong). Set it in the editor, not in code, unless you use <code>layer_sequence_headdir()</code>.</li>
+          <li>Choose one-shot, loop, or ping-pong playback in the Sequence editor. <code>layer_sequence_headdir()</code> changes playback direction; it does not select the looping mode.</li>
         </ul>
 
         <h2>Frequently Asked Questions</h2>
