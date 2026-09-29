@@ -150,7 +150,12 @@
     .logo-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;}
     .logo-card{background:var(--bg2);border:1px solid var(--border);padding:48px 40px;display:flex;align-items:center;justify-content:center;}
     .logo-card.dark-bg{background:#000;}
-    .logo-card img{max-width:180px;height:auto;display:block;}
+    .logo-card img{max-width:180px;width:100%;height:auto;display:block;}
+    .logo-card img[width]{max-width:100%;width:auto;}
+    .logo-card{flex-direction:column;gap:20px;text-align:center;min-width:0;}
+    .logo-card a,.logo-card summary{color:var(--cyan);font-size:.8rem;}
+    .logo-card summary{cursor:pointer;}
+    .logo-card details img{margin:20px auto;}
     .logo-card svg{width:48px;height:48px;}
     .logo-note{font-size:.68rem;color:var(--muted);line-height:1.8;margin-top:20px;}
 
@@ -326,7 +331,22 @@
           <img src="/img/logo.png" alt="Ruxar studio logo – white on black background" loading="lazy" />
         </div>
       </div>
-      <p class="logo-note">Right-click to save. For additional art — capsule images, key art, and character sprites — visit the Steam store pages linked in the fact sheets above. Please do not alter logo colours or proportions.</p>
+      <h3>iZBOT 2 logos</h3>
+      <div class="logo-grid">
+        <div class="logo-card dark-bg">
+          <img src="/img/izbot-2/logo.png" alt="iZBOT 2 pixel-art logo in pink, purple and green" width="600" height="141" loading="lazy" />
+          <a href="/img/izbot-2/logo.png" download>Download iZBOT 2 logo (PNG)</a>
+        </div>
+        <div class="logo-card dark-bg">
+          <details>
+            <summary>Show animated glitch logo</summary>
+            <img src="/img/izbot-2/logo-glitch.gif" alt="Animated iZBOT 2 logo with a glitch effect" width="356" height="160" loading="lazy" />
+            <p class="logo-note">Close this preview to hide the animation.</p>
+          </details>
+          <a href="/img/izbot-2/logo-glitch.gif" download>Download animated logo (GIF)</a>
+        </div>
+      </div>
+      <p class="logo-note">Download the iZBOT 2 logos above for press coverage. For additional art, visit the Steam store pages linked in the fact sheets above. Please do not alter logo colours or proportions.</p>
     </div>
   </section>
 
