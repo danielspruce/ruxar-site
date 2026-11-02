@@ -4,7 +4,18 @@
     const link = event.target.closest('a[href]');
     if (!link) return;
     const url = new URL(link.href, location.href);
-    if (url.hostname !== 'store.steampowered.com' || typeof window.gtag !== 'function') return;
+    if (typeof window.gtag !== 'function') return;
+    // Measure the research-to-game step separately from the outbound Steam step.
+    const current = new URL(location.href);
+    if (url.origin === current.origin && /^\/games\/izbot(?:-2)?\/$/.test(url.pathname)) {
+      window.gtag('event', 'game_page_click', {
+        game: url.pathname.includes('izbot-2') ? 'izbot2' : 'izbot',
+        page: location.pathname,
+        destination: url.pathname
+      });
+      return;
+    }
+    if (url.hostname !== 'store.steampowered.com') return;
     const game = url.pathname.includes('/app/388970/') ? 'izbot'
       : url.pathname.includes('/app/1452790/') ? 'izbot2' : 'ruxar';
     window.gtag('event', 'steam_click', {

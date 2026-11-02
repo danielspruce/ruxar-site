@@ -1,0 +1,77 @@
+/* Readability pass: keep the iZBOT display identity; give reading text room. */
+:root { --font-b: 'Segoe UI', Arial, sans-serif; --muted: #b6c4d8; }
+body { font-family: var(--font-b); font-size: 18px; line-height: 1.75; }
+nav a { font-size: .95rem; letter-spacing: .015em; text-transform: none; }
+.ncta { font-family: var(--font-b) !important; font-size: .9rem !important; letter-spacing: .01em; }
+.btn { font-family: var(--font-b); font-size: 1rem; letter-spacing: .01em; text-transform: none; min-height: 44px; }
+.slabel, .section-label, .eyebrow, .hero-eyebrow { font-size: .85rem; letter-spacing: .06em; }
+.stitle, .section-title { font-size: clamp(1.65rem, 3vw, 2.3rem); }
+.stitle em, .section-title em { color: var(--white); -webkit-text-stroke: 0; }
+.fc, .fl a { font-size: .875rem; letter-spacing: .01em; text-transform: none; }
+.post-grid { gap: 24px; }
+.blog-hero h1 { font-size: clamp(2rem, 5vw, 3rem); letter-spacing: 0; }
+.blog-hero p { font-size: 1.1rem; max-width: 60ch; }
+.blog-card h3 { font-family: var(--font-b); font-size: 1.4rem; line-height: 1.35; letter-spacing: 0; }
+.blog-card p { font-size: 1rem; line-height: 1.75; }
+.blog-card-tag, .blog-card-date, .blog-card-read, .article-tag, .article-date { font-family: var(--font-b); font-size: .875rem; letter-spacing: .01em; }
+.article-wrap { max-width: 780px; }
+.article-wrap h1 { font-family: var(--font-b); font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; letter-spacing: -.025em; }
+.article-intro { font-size: 1.2rem; }
+.article-body h2 { font-family: var(--font-b); font-size: 1.65rem; line-height: 1.35; letter-spacing: 0; }
+.article-body h3, .cta-box h3 { font-family: var(--font-b); font-size: 1.3rem; line-height: 1.4; letter-spacing: 0; }
+.article-body p, .article-body li, .cta-box p { font-size: 1.125rem; line-height: 1.8; }
+.article-body table { font-size: 1rem; }
+.article-body p, .article-body li { overflow-wrap: break-word; }
+.back-link { font-size: 1rem; }
+.mobile-nav a { font-family: var(--font-b); letter-spacing: .01em; }
+.blog-steam-cta p { font-size: 1rem; }
+.hero-sub { font-size: 1.2rem; max-width: 46ch; letter-spacing: 0; line-height: 1.75; }
+.hero-title { color: var(--white); -webkit-text-stroke: 0; text-shadow: none; }
+.hero-title .z { text-shadow: none; }
+.homepage .hero { min-height: 680px; min-height: min(820px, 92svh); }
+.hero .eyebrow, .hero-title, .hero-sub, .hero-ctas { opacity: 1; animation: none; }
+.gg { gap: 24px; align-items: stretch; }
+.gc { border: 1px solid var(--border); }
+.gc .gc-img-wrap { padding-bottom: 46.74%; }
+.gc img { filter: none; }
+.gc .gcov { display: none; }
+.gc .gbody { position: static; padding: 28px; text-shadow: none; }
+.gc .gdesc { font-size: 1.05rem; line-height: 1.75; max-width: none; letter-spacing: 0; }
+.gc .gcta { opacity: 1; transform: none; font-family: var(--font-b); font-size: .95rem; letter-spacing: 0; }
+.gnum, .sk { font-size: .85rem; letter-spacing: .04em; }
+.games, .reviews, .blog { padding-top: 80px; padding-bottom: 80px; }
+.bg { gap: 24px; }
+.bc h3 { font-family: var(--font-b); font-size: 1.4rem; line-height: 1.4; letter-spacing: 0; }
+.bc p { font-size: 1rem; letter-spacing: 0; }
+.btag, .bread, .vall { font-size: .875rem; letter-spacing: .02em; }
+.bnum { display: none; }
+.rc-text { font-size: 1.05rem; }
+.rc-author { font-family: var(--font-b); font-size: .9rem; letter-spacing: .02em; }
+.feat p, .faq-item p, .compare-col li, .also-card p { font-size: 1.05rem; line-height: 1.75; }
+.feat h3, .faq-item h3, .also-card h3 { font-family: var(--font-b); font-size: 1.25rem; letter-spacing: 0; }
+:target { scroll-margin-top: 90px; }
+@media (max-width: 860px) {
+  .gg { grid-template-columns: 1fr; }
+  header nav { gap: 16px; }
+}
+@media (min-width: 581px) and (max-width: 720px) {
+  header nav { gap: 10px; }
+  header nav a { font-size: .85rem; }
+  header { padding-left: 18px; padding-right: 18px; }
+}
+@media (max-width: 580px) {
+  .homepage .hero { min-height: 620px; padding-left: 20px; padding-right: 20px; }
+  .hero-sub { font-size: 1.1rem; }
+  .hero-title { font-size: clamp(4rem, 20vw, 7rem); }
+  .bc { padding: 26px; }
+  .article-body p, .article-body li { font-size: 1.0625rem; }
+}
+
+.game-desc, .game-card-desc, .bio-text, .phil-text, .contact-note { font-size: 1.0625rem; line-height: 1.8; }
+.game-meta, .game-card-meta, .game-card-cta, .bio-role, .stat-label, .also-label { font-family: var(--font-b); font-size: .875rem; letter-spacing: .02em; }
+.game-card-title, .phil-title { font-family: var(--font-b); font-size: 1.25rem; letter-spacing: 0; }
+.game-tagline { font-family: var(--font-b); font-size: 1rem; letter-spacing: .01em; }
+.compare .c > p { font-size: 1rem !important; line-height: 1.75; }
+.reviews-toggle { display:block; margin:24px auto 0; padding:12px 20px; border:1px solid var(--cyan); background:var(--bg2); color:var(--white); font:600 1rem/1.5 var(--font-b); cursor:pointer; }
+.reviews-track-wrap:focus-visible { outline:2px solid var(--cyan); outline-offset:-4px; }
+@media(prefers-reduced-motion:reduce) { .reviews-toggle { display:none; } }

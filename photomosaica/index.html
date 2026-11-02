@@ -640,29 +640,25 @@
       .trust-inner { grid-template-columns: 1fr; }
     }
   </style>
+  <link rel="stylesheet" href="/header.css" />
 </head>
-<body>
+<body class="photomosaica-page">
 
 <!-- ─── NAV ─── -->
-<nav>
-  <a href="/photomosaica/" class="nav-logo">Photomosaica</a>
-  <ul class="nav-links">
-    <li><a href="#how-it-works">How it Works</a></li>
-    <li><a href="#privacy">Privacy</a></li>
-    <li><a href="#examples">Examples</a></li>
-    <li><span class="nav-cta">Coming Soon — Microsoft Store</span></li>
-  </ul>
-  <button class="nav-hamburger" aria-label="Menu" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='flex'?'none':'flex'">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- Mobile nav menu (hidden by default) -->
-<div style="display:none;flex-direction:column;background:#fff;border-bottom:1px solid var(--border);padding:12px 20px;gap:4px;">
-  <a href="#how-it-works" style="padding:10px 0;font-size:0.9rem;font-weight:500;color:var(--text);text-decoration:none;border-bottom:1px solid var(--border);">How it Works</a>
-  <a href="#privacy" style="padding:10px 0;font-size:0.9rem;font-weight:500;color:var(--text);text-decoration:none;border-bottom:1px solid var(--border);">Privacy</a>
-  <a href="#examples" style="padding:10px 0;font-size:0.9rem;font-weight:500;color:var(--text);text-decoration:none;">Examples</a>
-</div>
+<header class="site-header">
+    <a href="/" class="site-brand" aria-label="Ruxar – Home">RUXAR</a>
+    <nav aria-label="Main navigation"><a href="/#games">Games</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/press/">Press</a>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=photomosaica-nav-1" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a></nav>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+  <div class="mobile-nav" aria-label="Mobile navigation"><a href="/#games">Games</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/press/">Press</a>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=photomosaica-nav-2" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a></div>
 
 <!-- ─── HERO ─── -->
 <section style="padding:0;">
@@ -856,5 +852,6 @@
   <p>Photomosaica — Photo Mosaic Software for Windows.</p>
 </footer>
 
+<script src="/site.js" defer></script>
 </body>
 </html>

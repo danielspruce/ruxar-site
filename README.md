@@ -147,7 +147,7 @@ Before publishing, confirm:
 - [ ] `datePublished` in JSON-LD is accurate
 - [ ] Article has at least one link to a Steam page (iZBOT or iZBOT 2)
 - [ ] Article has at least one link to another article on ruxar.com (internal linking)
-- [ ] Article is at least 600 words (longer is generally better for SEO)
+- [ ] Article answers its intended question with sufficient evidence; there is no minimum word count
 - [ ] Filename/URL slug contains the main keyword
 - [ ] Sitemap is updated with the new URL
 
@@ -155,14 +155,14 @@ Before publishing, confirm:
 
 ## Article Ideas by SEO Category
 
-**High search volume — general:**
+**General topic candidates — search demand has not been measured:**
 - Best indie games under $5 on Steam
 - Best platformer games for beginners
 - Hardest platformer games on PC
 - Best robot games on Steam
 - Australian indie game developers
 
-**Niche / long-tail (easier to rank):**
+**Niche / long-tail candidates — ranking difficulty has not been measured:**
 - Best precision platformers with controller support
 - How to get better at platformer games
 - Why pixel art games are still popular
@@ -262,7 +262,8 @@ git push
 ```
 ruxar-site/
 ├── index.html              ← Main homepage
-├── style.css               ← All styles (shared by all pages)
+├── ruxar.css               ← Shared base styles
+├── readability.css         ← Readability overrides, loaded after page styles
 ├── sitemap.xml             ← SEO sitemap (update when adding articles)
 ├── robots.txt              ← Tells Google how to crawl
 ├── CNAME                   ← GitHub Pages domain config (don't touch)

@@ -433,8 +433,10 @@
       .stats { grid-template-columns:1fr; }
     }
   </style>
+  <link rel="stylesheet" href="/readability.css" />
+  <link rel="stylesheet" href="/header.css" />
 </head>
-<body>
+<body class="homepage">
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <div id="cur" aria-hidden="true"></div>
@@ -444,31 +446,27 @@
 
 <div class="pw">
 
-  <header>
-    <a href="/" class="logo" aria-label="iZBOT – Home">I<span class="logo-z">Z</span>BOT</a>
-    <nav aria-label="Main navigation">
-      <a href="#games">Games</a>
+  <header class="site-header">
+    <a href="/" class="site-brand" aria-label="Ruxar – Home">RUXAR</a>
+    <nav aria-label="Main navigation"><a href="/#games">Games</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
       <a href="/press/">Press</a>
-      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=home-nav-1" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
-    </nav>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=home-nav-1" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a></nav>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
-  <div class="mobile-nav" aria-label="Mobile navigation">
-    <a href="#games">Games</a>
-    <a href="/blog/">Blog</a>
-    <a href="/about/">About</a>
-    <a href="/press/">Press</a>
-    <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=home-nav-2" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a>
-  </div>
+  <div class="mobile-nav" aria-label="Mobile navigation"><a href="/#games">Games</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+      <a href="/press/">Press</a>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=home-nav-2" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a></div>
 
   <main id="main-content">
   <!-- ─── HERO ─────────────────────────────────── -->
   <section class="hero" aria-label="iZBOT hero">
     <p class="eyebrow" aria-label="Game by Ruxar, Australian Indie Studio, since 2014">Ruxar &nbsp;·&nbsp; Australian Indie Studio &nbsp;·&nbsp; Since 2014</p>
 
-    <h1 class="hero-title">I<span class="z">Z</span>BOT</h1>
+    <h1 class="hero-title" aria-label="iZBOT — precision platformer on Steam">I<span class="z">Z</span>BOT</h1>
 
     <p class="hero-sub">
       Fast-paced precision platformer on Steam.<br/>
@@ -493,15 +491,15 @@
   <!-- ─── GAMES ─────────────────────────────────── -->
   <section class="games" id="games" aria-labelledby="games-heading">
     <div class="c">
-      <p class="slabel rv">The Collection</p>
-      <h2 class="stitle rv" id="games-heading">Two games.<br/><em>One obsession.</em></h2>
+      <p class="slabel rv">Pick Your Challenge</p>
+      <h2 class="stitle rv" id="games-heading">Two games.<br/><em>One more try.</em></h2>
     </div>
 
     <div class="c">
       <div class="gg rv">
 
         <a href="/games/izbot/" class="gc" aria-label="iZBOT – learn more and buy on Steam">
-          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" alt="iZBOT – indie precision platformer game on Steam by Ruxar" loading="lazy" /></div>
+          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" width="460" height="215" alt="iZBOT – indie precision platformer game on Steam by Ruxar" loading="lazy" /></div>
           <div class="gcov"></div>
           <div class="gbody">
             <p class="gnum">01 / 02</p>
@@ -516,7 +514,7 @@
         </a>
 
         <a href="/games/izbot-2/" class="gc" aria-label="iZBOT 2 – learn more and buy on Steam">
-          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1452790/header.jpg?t=1708106639" alt="iZBOT 2 – precision platformer sequel on Steam, expanded levels and new mechanics" loading="lazy" /></div>
+          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1452790/header.jpg?t=1708106639" width="460" height="215" alt="iZBOT 2 – precision platformer sequel on Steam, expanded levels and new mechanics" loading="lazy" /></div>
           <div class="gcov"></div>
           <div class="gbody">
             <p class="gnum">02 / 02</p>
@@ -555,7 +553,8 @@
       <p class="slabel rv">Steam Reviews</p>
       <h2 class="stitle rv">Players have<br/><em>opinions.</em></h2>
     </div>
-    <div class="reviews-track-wrap" role="region" aria-label="Scrolling player reviews – hover or focus to pause">
+    <button class="reviews-toggle" type="button" aria-pressed="false" aria-controls="player-reviews">Pause reviews</button>
+    <div class="reviews-track-wrap" id="player-reviews" tabindex="0" role="region" aria-label="Player reviews – hover or focus to pause">
       <div class="reviews-track" aria-live="off">
 
         <div class="rc">
@@ -634,19 +633,19 @@
           <span class="bread">Read article <span class="barr"></span></span>
         </a>
 
-        <a href="blog/posts/why-hard-games-are-good-for-you.html" class="bc">
+        <a href="blog/posts/why-difficult-games-make-us-retry.html" class="bc">
           <p class="bnum">002</p>
-          <span class="btag">Opinion</span>
-          <h3>Why Hard Platformer Games Are Actually Good For You</h3>
-          <p>The science and psychology behind why failing 200 times at the same jump is actually rewarding.</p>
+          <span class="btag">Research</span>
+          <h3>Why Difficult Games Make Us Want One More Try</h3>
+          <p>Five research papers on mastery, persistence, frustration, and skills, and what they can tell us about precision platformers.</p>
           <span class="bread">Read article <span class="barr"></span></span>
         </a>
 
-        <a href="blog/posts/indie-platformer-dev-lessons.html" class="bc" data-tag="dev">
+        <a href="blog/posts/steam-game-completion-rates.html" class="bc">
           <p class="bnum">003</p>
-          <span class="btag">Dev</span>
-          <h3>5 Lessons From Shipping an Indie Platformer on Steam</h3>
-          <p>Pricing mistakes, wishlist strategy, launch timing — what actually moves the needle as a solo dev.</p>
+          <span class="btag">Guide</span>
+          <h3>Steam Game Completion Rates: Six Achievement Milestones</h3>
+          <p>What Steam achievement percentages reveal about major milestones, with source links and clear limitations.</p>
           <span class="bread">Read article <span class="barr"></span></span>
         </a>
 
@@ -913,8 +912,18 @@ if('requestIdleCallback' in window){
   const track = document.querySelector('.reviews-track');
   if(!track) return;
   const wrap = document.querySelector('.reviews-track-wrap');
-  wrap.addEventListener('focusin', () => track.style.animationPlayState = 'paused');
-  wrap.addEventListener('focusout', () => track.style.animationPlayState = 'running');
+  const button = document.querySelector('.reviews-toggle');
+  let paused = false;
+  function update() {
+    track.style.animationPlayState = paused || wrap.matches(':focus-within') || wrap.matches(':hover') ? 'paused' : 'running';
+    button.setAttribute('aria-pressed', String(paused));
+    button.textContent = paused ? 'Resume reviews' : 'Pause reviews';
+  }
+  button.addEventListener('click', () => { paused = !paused; update(); });
+  wrap.addEventListener('focusin', update);
+  wrap.addEventListener('focusout', update);
+  wrap.addEventListener('mouseenter', update);
+  wrap.addEventListener('mouseleave', update);
 })();
 
 /* SCROLL REVEAL
