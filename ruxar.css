@@ -308,3 +308,12 @@ footer { border-top: 1px solid var(--border); padding: 38px 0; }
   .blog-hero { padding: 88px 18px 40px; }
   .article-wrap { padding: 88px 18px 60px; }
 }
+
+/* Article comparisons stay within the viewport on narrow screens. */
+.comparison-scroll { overflow-x: auto; margin: 24px 0 32px; border: 1px solid var(--border); }
+.comparison-scroll:focus-visible { outline: 2px solid var(--cyan); outline-offset: 4px; }
+.comparison-table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: .82rem; line-height: 1.7; }
+.comparison-table caption { padding: 16px; text-align: left; color: var(--muted); }
+.comparison-table th, .comparison-table td { padding: 14px 16px; text-align: left; vertical-align: top; border-top: 1px solid var(--border); }
+.comparison-table th { color: var(--white); background: var(--bg3); }
+.comparison-table td { color: var(--muted); }
