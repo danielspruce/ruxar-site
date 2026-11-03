@@ -23,7 +23,7 @@
     "headline": "How to Make Animated GIFs for Game Marketing",
     "description": "A practical guide to creating animated GIFs from your game for Steam, Twitter, and Reddit — tools, methods, and optimisation tips for indie developers.",
     "datePublished": "2026-03-20",
-    "dateModified": "2026-09-29",
+    "dateModified": "2026-11-03",
     "author": {
       "@type": "Person",
       "name": "Daniel Spruce",
@@ -117,32 +117,32 @@
       <div class="article-meta">
         <span class="article-tag">Guide</span>
         <time class="article-date" datetime="2026-03-20" itemprop="datePublished">March 20, 2026</time>
-        <span class="article-date">Updated <time datetime="2026-09-28" itemprop="dateModified">September 28, 2026</time></span>
+        <span class="article-date">Updated <time datetime="2026-11-03" itemprop="dateModified">November 3, 2026</time></span>
       </div>
 
       <h1 itemprop="headline">How to Make Animated GIFs for Your Game</h1>
 
-      <p class="article-intro">An animated GIF showing your game in action does more for wishlists than any screenshot. Here's how to make them — from screen capture to optimised, shareable file.</p>
+      <p class="article-intro">Capture one readable action, trim it into a loop, and check the exported file where you plan to publish it. This guide covers screen capture and sprite exports, with two iZBOT 2 animation examples and a checklist for diagnosing common export problems.</p>
 
       <div class="article-body" itemprop="articleBody">
 
         <h2>Why GIFs Still Matter for Game Marketing</h2>
-        <p>GIFs autoplay on most platforms without a click. A well-made GIF showing fluid movement, a satisfying mechanic, or a funny moment in your game gets reshared in ways static screenshots don't. On Reddit (r/indiegaming, r/gaming), animated posts consistently outperform static image posts. On Twitter/X, they're a core part of any game announcement strategy. Steam supports animations in the About This Game and Special Announcement sections of a store page.</p>
+        <p>A short loop can demonstrate movement, timing, or a transformation that a still image cannot show. Autoplay and upload handling depend on the platform and viewer settings. Keep a still preview and a video version available, and choose the format after testing the destination. A GIF alone does not establish a wishlist or sales improvement.</p>
 
         <h2>Tool Comparison</h2>
         <p>You don't need expensive software. Here are the main options:</p>
 
         <h3>ScreenToGif (Windows, free)</h3>
-        <p>Records a selected area of your screen directly to GIF. Has a built-in frame editor, optimiser, and supports saving in multiple formats including WebP. The best all-in-one free option for Windows.</p>
+        <p>Records a selected area of your screen directly to GIF. Has a built-in frame editor, optimiser, and supports saving in multiple formats including WebP. Useful when you want capture and frame editing in one workflow.</p>
 
         <h3>LICEcap (Windows/Mac, free)</h3>
         <p>Simpler than ScreenToGif. Click, drag a region, record. Minimal editing tools, but reliable and very quick for basic captures.</p>
 
-        <h3>Gifox (Mac, paid ~$8)</h3>
+        <h3>Gifox (Mac)</h3>
         <p>Clean, minimal interface. Menu bar app that records a window or screen region. Produces well-optimised GIFs without much effort.</p>
 
-        <h3>Aseprite (Windows/Mac/Linux, ~$20)</h3>
-        <p>If you're making pixel art, Aseprite is the industry standard. Export any animation directly to GIF from your sprite file. No screen capture needed.</p>
+        <h3>Aseprite (Windows/Mac/Linux)</h3>
+        <p>If you already animate pixel art in Aseprite, use the source animation for export. Export any animation directly to GIF from your sprite file. No screen capture needed.</p>
 
         <h3>Photoshop (paid)</h3>
         <p>Can create GIFs from video files or image sequences using the Timeline panel. Powerful editor but overkill unless you already have it.</p>
@@ -169,7 +169,7 @@
           <li>Set loop options and frame timing.</li>
           <li>Export.</li>
         </ol>
-        <p>This produces a clean GIF directly from your source art — no screen capture artefacts, perfect pixel alignment, and a much smaller file size than screen recording.</p>
+        <p>This produces a clean GIF directly from your source art — no screen capture artefacts, perfect pixel alignment, and control over the source frames. Compare exported file sizes rather than assuming either method is always smaller.</p>
 
         <h2>Examples from the iZBOT 2 Art Folder</h2>
         <p>These two exports show different uses for animated pixel art: a character animation and an animated game logo. Open each preview to view it, then close it to hide the motion.</p>
@@ -198,9 +198,20 @@
           <li><strong>Limit palette</strong>: GIFs support a maximum of 256 colours. Most tools have a palette reduction option — 64 or 128 colours is often indistinguishable from 256 for pixel art.</li>
           <li><strong>Keep it short</strong>: Under 10 seconds. Under 6 seconds for social media posts. The loop is what creates the impression of longer content.</li>
           <li><strong>Reduce dimensions</strong>: 600×338 (16:9) is enough for most uses. You don't need 1920×1080.</li>
-          <li><strong>Reduce frame rate</strong>: Drop from 24fps to 12fps and halve the file size. For action games with fast motion, stay at 24fps. For slower games, 12fps is fine.</li>
+          <li><strong>Reduce frame rate</strong>: Try reducing the frame rate and compare motion and file size; compression means the saving will not be exactly proportional. For action games with fast motion, stay at 24fps. For slower games, 12fps is fine.</li>
           <li><strong>Use ScreenToGif's optimiser</strong>: It removes duplicate frames and reduces the palette automatically.</li>
         </ul>
+
+        <h2>Check the Export Before Publishing</h2>
+        <ol>
+          <li><strong>Loop seam:</strong> play several cycles. Trim a duplicated first/last frame or choose a more natural endpoint if the action pauses.</li>
+          <li><strong>Pixel edges:</strong> inspect at native size. For pixel art, use whole-number scaling and nearest-neighbour resizing where available.</li>
+          <li><strong>Palette:</strong> compare a still frame with the source. Increase the colour count or adjust dithering if gradients become distracting.</li>
+          <li><strong>Transparency:</strong> test on both light and dark backgrounds. GIF transparency cannot preserve partially transparent edges like PNG can; a solid background may give a cleaner result.</li>
+          <li><strong>Size and timing:</strong> record dimensions, duration, frame count, and bytes. Change one setting at a time so you can see which compromise helps.</li>
+          <li><strong>Destination:</strong> upload a draft and view it on a phone. Check cropping, compression, looping, and whether the action still reads without sound.</li>
+        </ol>
+        <p>The tank and logo above offer two different tests: follow the character's movement in the first, then check whether the wordmark remains legible through the second. Neither requires a long clip to communicate its subject.</p>
 
         <h2>Where to Use Your GIFs</h2>
         <ul>
