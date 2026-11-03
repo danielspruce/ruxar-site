@@ -22,7 +22,7 @@
     "headline": "AI Art and Game Dev – An Honest Take",
     "description": "An indie developer's honest assessment of AI art tools for game development — what they're useful for, where they fall short, and the real controversy around using them.",
     "datePublished": "2026-03-20",
-    "dateModified": "2026-03-20",
+    "dateModified": "2026-11-03",
     "author": {
       "@type": "Person",
       "name": "Daniel Spruce",
@@ -53,12 +53,12 @@
       {
         "@type": "Question",
         "name": "Should indie developers use AI art in their games?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It depends on what you're using it for and how transparent you are about it. AI tools can be genuinely useful for concepting, mood boards, and placeholder art during development. Using AI-generated assets in a shipped commercial game is more controversial — the game development community has strong feelings about it, Steam requires disclosure, and the legal status of training data is still being contested in courts. If you're using AI art commercially, disclose it and be prepared for some players to care." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Start with a limited test: choose one asset type, define acceptance criteria, and measure the cleanup needed before integration. For shipped assets, check the model terms and store requirements and keep an asset record. Internal concept experiments and player-facing content are different uses; describe your actual use accurately." }
       },
       {
         "@type": "Question",
         "name": "Is AI-generated art allowed on Steam?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes, with disclosure. Valve updated its policies in 2023 to require developers to disclose the use of AI-generated content (both live-generated and pre-generated) during the submission process. Games using AI art without disclosure risk being removed. The rules are still evolving — check Steamworks documentation for the current requirements before submitting." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Steam accepts games using AI-generated content subject to its review and rules. The Content Survey distinguishes pre-generated content from content generated while the game runs; live generation also requires information about safeguards against illegal content. Check the current Steamworks documentation when preparing your submission." }
       },
       {
         "@type": "Question",
@@ -116,6 +116,7 @@
       <div class="article-meta">
         <span class="article-tag">Opinion</span>
         <time class="article-date" datetime="2026-03-20" itemprop="datePublished">March 20, 2026</time>
+        <span class="article-date">Updated <time datetime="2026-11-03" itemprop="dateModified">November 3, 2026</time></span>
       </div>
 
       <h1 itemprop="headline">AI Art and Game Dev – An Honest Take</h1>
@@ -125,13 +126,13 @@
       <div class="article-body" itemprop="articleBody">
 
         <h2>What AI Art Tools Exist</h2>
-        <p>The main tools in 2025 are Midjourney (Discord-based, subscription, high output quality), Stable Diffusion (open source, run locally or via services like Automatic1111/ComfyUI), DALL-E 3 (integrated into ChatGPT Plus), Adobe Firefly (trained on licensed Adobe Stock, built into Photoshop), and Leonardo.ai (game-asset-focused, free tier available). These tools can generate images from text prompts in seconds. Some can also do image-to-image transformation (modifying an existing image) and inpainting (replacing specific parts of an image).</p>
+        <p>Choose a workflow before choosing a model: generate visual references, edit an existing image, or produce assets for a build. Check whether a tool supports reference images, selected-area edits, transparency, and the export dimensions you need. Features and plan limits change, so test a small asset set before committing a project to one service.</p>
 
         <h2>What They're Actually Useful For in Game Dev</h2>
         <p>Let's be specific, because the answer varies a lot by use case.</p>
 
         <h3>Concepting and Mood Boards</h3>
-        <p>This is where AI tools shine in game development. If you're early in a project and trying to establish an art direction, generating 50 reference images in 20 minutes beats describing your vision with words. You're not using the output — you're using it as a communication tool for artists or as a visual reference for yourself.</p>
+        <p>Use a mood board to compare lighting, palette, composition, and material choices. Write down which parts of each reference matter, then turn those observations into an art brief. A collection of attractive images alone does not define a repeatable production style.</p>
 
         <h3>Texture Generation</h3>
         <p>For 3D games especially, AI tools can generate tileable textures for environments quickly. Tools like Stable Diffusion with specific settings can produce stone, wood, concrete, and organic textures that work well as a base for manual cleanup.</p>
@@ -142,10 +143,20 @@
         <h3>Background Elements with Low Visual Importance</h3>
         <p>A distant cityscape, a decorative border, a pattern on a wall that the player never looks at closely — these are lower-stakes uses where AI-generated art causes less friction.</p>
 
+        <h2>A Small Asset Trial Before You Commit</h2>
+        <ol>
+          <li><strong>Write a brief:</strong> specify the asset's purpose, dimensions, background, palette, and required views.</li>
+          <li><strong>Make a complete sample:</strong> for a character, include an idle pose, a movement pose, and a back view rather than three unrelated portraits.</li>
+          <li><strong>Place it in the game:</strong> view it at native resolution against a representative background.</li>
+          <li><strong>Request one revision:</strong> change a specific detail and compare what else changed.</li>
+          <li><strong>Record the cost:</strong> include generation, selection, editing, export, and engine integration time. Compare that total with drawing or commissioning the same sample.</li>
+        </ol>
+        <p>Keep the brief and the accepted source files together. If the sample fails, narrow the task or choose another production method before producing a whole asset library.</p>
+
         <h2>Where AI Art Falls Short</h2>
 
         <h3>Character Consistency</h3>
-        <p>If your main character needs to look the same from multiple angles, in multiple poses, across 80 animation frames — AI tools cannot do this reliably. The outputs are inconsistent in ways that break the illusion of a coherent game world. This is improving, but as of 2025 it's still a significant limitation.</p>
+        <p>Test character consistency across the actual poses your game needs: front, side, back, movement, and damage states. Check silhouette, costume details, proportions, and colour placement at the final on-screen size. A convincing single portrait does not demonstrate that an entire animation set will work together.</p>
 
         <h3>Specific Art Styles</h3>
         <p>If you want art that looks like your game's established visual identity, AI tools struggle to replicate it consistently. They can approximate influences, but they're poor at "more of this specific thing I already have."</p>
@@ -154,27 +165,27 @@
         <p>Buttons, menus, HUDs, text overlays — AI tools are unreliable here. Generated UI often has placeholder-looking text, inconsistent sizing, and visual noise that makes the interface harder to read, not easier.</p>
 
         <h3>Anything That Needs Iteration Feedback</h3>
-        <p>AI tools give you outputs, not process. If you say "the character's left arm looks wrong," you can't fix just the arm — you generate a new image and hope. A real artist makes targeted revisions. This makes AI art expensive in a different way: revision cycles.</p>
+        <p>Selected-area editing is available in tools such as <a href="https://help.openai.com/en/articles/11084440-chatgpt-images-faq">ChatGPT Images</a>. You can request a change to an arm or another part of an image, but inspect the rest of the result too. Compare alignment, unchanged details, transparency, and palette after each edit; budget time for manual cleanup rather than assuming each revision is production-ready.</p>
 
         <h2>The Controversy — What It's Actually About</h2>
-        <p>The objection to AI art in games isn't only aesthetic. The training data issue is real: most major AI art models were trained on billions of images scraped from the internet, including images by artists who did not consent to their work being used for training. The legal status of this is being contested in courts in multiple countries, and the outcome is genuinely uncertain.</p>
-        <p>There's also a livelihood argument: every dollar spent on AI-generated art is potentially a dollar that doesn't go to a human artist. In an industry where concept artists and 2D game artists are already in a precarious freelance market, that matters to many people.</p>
-        <p>Steam's policy of requiring disclosure is a partial response to this — it lets players make informed choices. But the policy doesn't address the training data question.</p>
+        <p>Training sources and licensing vary by model. For example, <a href="https://www.adobe.com/ai/overview/firefly/gen-ai-approach.html">Adobe describes its Firefly models</a> as trained on licensed material and public-domain content. Read the documentation for the specific model you use, including any partner model offered inside another product. A service permitting commercial use does not by itself settle every question about a particular output.</p>
+        <p>Commissioned art also buys collaboration: feedback, source files, a consistent visual direction, and agreed revisions. Compare the complete workflow cost, including cleanup and integration, rather than comparing a generation fee with an entire art commission.</p>
+        <p>For release planning, use the current <a href="https://partner.steamgames.com/doc/gettingstarted/contentsurvey">Steamworks Content Survey</a> as the source for disclosure requirements. Keep a record of which shipped assets use generative tools so the survey can be completed accurately.</p>
 
         <h2>Frequently Asked Questions</h2>
 
         <h3>Should indie developers use AI art in their games?</h3>
-        <p>It depends on what you're using it for and how transparent you are about it. AI tools can be genuinely useful for concepting, mood boards, and placeholder art during development. Using AI-generated assets in a shipped commercial game is more controversial — the game development community has strong feelings about it, Steam requires disclosure, and the legal status of training data is still being contested in courts. If you're using AI art commercially, disclose it and be prepared for some players to care.</p>
+        <p>Start with a limited test: choose one asset type, define acceptance criteria, and measure the cleanup needed before integration. For shipped assets, check the model terms and store requirements and keep an asset record. Internal concept experiments and player-facing content are different uses; describe your actual use accurately.</p>
 
         <h3>Is AI-generated art allowed on Steam?</h3>
-        <p>Yes, with disclosure. Valve updated its policies in 2023 to require developers to disclose the use of AI-generated content (both live-generated and pre-generated) during the submission process. Games using AI art without disclosure risk being removed. The rules are still evolving — check Steamworks documentation for the current requirements before submitting.</p>
+        <p>Steam accepts games using AI-generated content subject to its review and rules. The Content Survey distinguishes pre-generated content from content generated while the game runs; live generation also requires information about safeguards against illegal content. Check the current Steamworks documentation when preparing your submission.</p>
 
         <h3>What is AI art actually good for in game development?</h3>
         <p>Concepting and mood boarding (generating visual references before commissioning real art), texture generation for 3D assets, placeholder art during early development, background elements with low visual importance, and rapid prototyping. It's less reliable for main characters, UI, or anything that needs to look consistent across many frames or angles.</p>
 
         <h2>The Honest Verdict</h2>
         <p>AI art tools are useful in game development for specific tasks — concepting, placeholders, textures, reference generation. Treating them as a replacement for commissioned or in-house art for a commercial game is a different question, with real trade-offs in quality, consistency, community reception, and ethics.</p>
-        <p>iZBOT uses hand-crafted art. That wasn't because AI tools didn't exist — it was because the specific visual identity of the game came from human decisions about what to draw, how to draw it, and what to leave out. That kind of authorship doesn't come from a prompt.</p>
+        <p>For concrete examples of finished game assets, compare the animated character and logo in the <a href="/how-to-make-animated-gifs/">GIF export guide</a> with the downloadable assets on the <a href="/press/">press page</a>. Use the same checks for any production method: readable silhouettes, consistent scale, clean edges, and usable exports.</p>
         <p>If you're considering commissioned art as an alternative, see our guide to <a href="/game-art-commissions/">how to commission game art for your indie game</a>.</p>
 
         <div class="cta-box">
