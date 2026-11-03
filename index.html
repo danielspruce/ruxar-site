@@ -226,9 +226,9 @@
       opacity:0;animation:fu .9s .35s forwards;
     }
     .hero-title .z {
-      color:var(--white);
+      color:var(--cyan);
       -webkit-text-stroke:0;
-      text-shadow:0 0 40px rgba(255,94,26,.6),0 0 100px rgba(255,94,26,.25);
+      text-shadow:none;
     }
     .hero-sub {
       font-size:clamp(.72rem,1.8vw,.88rem);color:var(--muted);letter-spacing:.07em;
@@ -241,7 +241,7 @@
     .btn {
       font-family:var(--font-d);font-size:.58rem;font-weight:700;letter-spacing:.12em;
       text-transform:uppercase;text-decoration:none;padding:15px 30px;border-radius:2px;
-      display:inline-flex;align-items:center;gap:10px;transition:all .25s;position:relative;overflow:hidden;
+      display:inline-flex;align-items:center;gap:10px;transition:background-color .25s,color .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden;
     }
     .bp { background:var(--cyan);color:var(--bg);box-shadow:0 0 30px rgba(0,245,200,.25); }
     .bp:hover { background:var(--white);box-shadow:0 0 50px rgba(0,245,200,.45); }
@@ -447,7 +447,7 @@
 <div class="pw">
 
   <header class="site-header">
-    <a href="/" class="site-brand" aria-label="Ruxar – Home">RUXAR</a>
+    <a href="/" class="site-brand" aria-label="Ruxar – Home">RU<span class="brand-accent">X</span>AR</a>
     <nav aria-label="Main navigation"><a href="/#games">Games</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
@@ -482,7 +482,7 @@
       <a href="#games" class="btn bs">See Both Games</a>
     </div>
 
-    <div class="sh">
+    <div class="sh" aria-hidden="true">
       <span>Scroll</span>
       <div class="sh-line"></div>
     </div>
@@ -582,25 +582,25 @@
         </div>
 
         <!-- Duplicate set for seamless loop -->
-        <div class="rc">
+        <div class="rc" aria-hidden="true">
           <span class="rc-quote">&ldquo;</span>
           <p class="rc-text">This game ruined my peaceful life.</p>
           <p class="rc-author">notsag</p>
         </div>
 
-        <div class="rc">
+        <div class="rc" aria-hidden="true">
           <span class="rc-quote">&ldquo;</span>
           <p class="rc-text">Super Meat Boy for those that really, really hate themselves.</p>
           <p class="rc-author">devomaniax</p>
         </div>
 
-        <div class="rc">
+        <div class="rc" aria-hidden="true">
           <span class="rc-quote">&ldquo;</span>
           <p class="rc-text">game</p>
           <p class="rc-author">arm</p>
         </div>
 
-        <div class="rc">
+        <div class="rc" aria-hidden="true">
           <span class="rc-quote">&ldquo;</span>
           <p class="rc-text">Killer platformer for tough people who look good in sunglasses, at night.</p>
           <p class="rc-author">loggerhead</p>

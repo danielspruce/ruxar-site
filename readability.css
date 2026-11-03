@@ -75,3 +75,16 @@ nav a { font-size: .95rem; letter-spacing: .015em; text-transform: none; }
 .reviews-toggle { display:block; margin:24px auto 0; padding:12px 20px; border:1px solid var(--cyan); background:var(--bg2); color:var(--white); font:600 1rem/1.5 var(--font-b); cursor:pointer; }
 .reviews-track-wrap:focus-visible { outline:2px solid var(--cyan); outline-offset:-4px; }
 @media(prefers-reduced-motion:reduce) { .reviews-toggle { display:none; } }
+
+/* Audit follow-up: bypass navigation and show authentic game imagery early. */
+.skip-link { position:fixed; top:-100%; left:16px; z-index:10000; background:var(--cyan); color:var(--bg); padding:10px 20px; font:700 1rem/1.5 var(--font-b); }
+.skip-link:focus { top:8px; }
+.homepage .hero { min-height:0; padding-top:110px; padding-bottom:48px; }
+.homepage .hero-title { font-size:clamp(4rem,10vw,8rem); }
+.homepage .hero-sub { margin:24px auto; }
+.homepage .sh { display:none; }
+.game-img-wrap img { height:auto; }
+@media(max-width:860px) {
+  .game-hero-inner .game-img-wrap { grid-row:1; }
+  .game-hero-inner { gap:28px; }
+}

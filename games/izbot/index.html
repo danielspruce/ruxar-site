@@ -163,19 +163,19 @@
     .game-hero-inner { display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center; }
     .eyebrow { font-size:.58rem;letter-spacing:.4em;text-transform:uppercase;color:var(--cyan);margin-bottom:16px; }
     .game-title { font-family:var(--font-d);font-size:clamp(3rem,8vw,6rem);font-weight:900;line-height:1;color:var(--white);margin-bottom:8px; }
-    .game-title .z { color:var(--orange);text-shadow:0 0 40px rgba(255,94,26,.5); }
+    .game-title .z { color:var(--cyan); }
     .game-subtitle { font-family:var(--font-d);font-size:.75rem;color:var(--cyan);letter-spacing:.15em;margin-bottom:28px; }
     .game-desc { font-size:.82rem;color:var(--muted);line-height:1.9;letter-spacing:.03em;margin-bottom:36px;max-width:480px; }
     .btn-group { display:flex;gap:12px;flex-wrap:wrap; }
-    .btn { font-family:var(--font-d);font-size:.58rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:15px 30px;border-radius:2px;display:inline-flex;align-items:center;gap:10px;transition:all .25s; }
+    .btn { font-family:var(--font-d);font-size:.58rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:15px 30px;border-radius:2px;display:inline-flex;align-items:center;gap:10px;transition:background-color .25s,color .25s,border-color .25s,box-shadow .25s; }
     .bp { background:var(--cyan);color:var(--bg);box-shadow:0 0 30px rgba(0,245,200,.2); }
     .bp:hover { background:var(--white);box-shadow:0 0 50px rgba(0,245,200,.4); }
     .bs { border:1px solid rgba(0,245,200,.3);color:var(--cyan);background:transparent; }
     .bs:hover { border-color:var(--cyan);background:rgba(0,245,200,.06); }
 
     .game-img-wrap { position:relative;border:1px solid var(--border);border-radius:2px;overflow:hidden; }
-    .game-img-wrap img { width:100%;display:block;filter:saturate(.8) brightness(.85); }
-    .game-img-wrap:hover img { filter:saturate(1) brightness(.95); }
+    .game-img-wrap img { width:100%;display:block; }
+    .game-img-wrap:hover img {  }
 
     /* SCREENSHOTS */
     .screenshots { padding:80px 0;border-bottom:1px solid var(--border); }
@@ -183,8 +183,8 @@
     .section-title { font-family:var(--font-d);font-size:clamp(1.2rem,3vw,1.7rem);font-weight:700;color:var(--white);margin-bottom:48px; }
     .section-title em { font-style:normal;-webkit-text-stroke:1px rgba(255,94,26,.65);color:transparent; }
     .ss-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:3px; }
-    .ss-grid img { width:100%;display:block;aspect-ratio:16/9;object-fit:cover;filter:saturate(.85) brightness(.88);transition:filter .4s; }
-    .ss-grid img:hover { filter:saturate(1) brightness(.9); }
+    .ss-grid img { width:100%;display:block;aspect-ratio:16/9;object-fit:cover; }
+    .ss-grid img:hover {  }
 
     /* FEATURES */
     .features { padding:80px 0;border-bottom:1px solid var(--border); }
@@ -260,11 +260,12 @@
   <link rel="stylesheet" href="/header.css" />
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
 <div class="pw">
 
   <header class="site-header">
-    <a href="/" class="site-brand" aria-label="Ruxar – Home">RUXAR</a>
+    <a href="/" class="site-brand" aria-label="Ruxar – Home">RU<span class="brand-accent">X</span>AR</a>
     <nav aria-label="Main navigation"><a href="/#games">Games</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
@@ -278,7 +279,7 @@
       <a href="/press/">Press</a>
       <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=games-izbot-nav-2" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a></div>
 
-  <main>
+  <main id="main-content" tabindex="-1">
 
     <!-- HERO -->
     <section class="game-hero">
@@ -298,7 +299,7 @@
             </div>
           </div>
           <div class="game-img-wrap">
-            <img src="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" alt="iZBOT – indie precision platformer game on Steam by Ruxar" loading="eager" />
+            <img src="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" alt="iZBOT – indie precision platformer game on Steam by Ruxar" width="460" height="215" loading="eager" />
           </div>
         </div>
       </div>
