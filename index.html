@@ -688,20 +688,32 @@ function initCanvas(){
   const RELEASE_F   = 0.035; // lerp strength back to capture position after stillness
   const STILL_MS    = 2000;  // ms before releasing
 
-  let W, H, nodes=[], sigs=[], mx=-999, my=-999;
+  let W, H, gridRows=0, gridCols=0, nodes=[], sigs=[], mx=-999, my=-999;
   let lastMoveTime = 0;
 
   function resize(){
+    const widthChanged = W !== innerWidth;
     W = cv.width  = innerWidth;
     H = cv.height = innerHeight;
-    buildGrid();
+    if(widthChanged) buildGrid();
+    else addGridRows();
   }
 
   function buildGrid(){
     nodes = [];
-    const cols = Math.ceil(W/CELL)+1, rows = Math.ceil(H/CELL)+1;
-    for(let r=0;r<rows;r++){
-      for(let c=0;c<cols;c++){
+    gridCols = Math.ceil(W/CELL)+1;
+    gridRows = 0;
+    addGridRows();
+    sigs = [];
+    for(let i=0;i<MAXSIG*.4;i++) spawn();
+  }
+
+  // Mobile browser chrome changes viewport height during scroll. Extend the
+  // existing grid instead of randomising every dot when that happens.
+  function addGridRows(){
+    const rows = Math.ceil(H/CELL)+1;
+    for(let r=gridRows;r<rows;r++){
+      for(let c=0;c<gridCols;c++){
         nodes.push({
           x:  c*CELL + (Math.random()-.5)*CELL*.4,
           y:  r*CELL + (Math.random()-.5)*CELL*.4,
@@ -712,8 +724,7 @@ function initCanvas(){
         });
       }
     }
-    sigs = [];
-    for(let i=0;i<MAXSIG*.4;i++) spawn();
+    gridRows = Math.max(gridRows, rows);
   }
 
   function near(x,y,k=6){
