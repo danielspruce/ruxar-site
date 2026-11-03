@@ -251,7 +251,7 @@
 
     /* REVIEWS */
     .reviews { padding:120px 0;border-top:1px solid var(--border);overflow:hidden; }
-    .reviews-track-wrap { position:relative;margin-top:56px; }
+    .reviews-track-wrap { position:relative;margin-top:56px;overflow:hidden; }
     .reviews-track-wrap::before,
     .reviews-track-wrap::after {
       content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none;
@@ -556,6 +556,7 @@
       <h2 class="stitle rv">Players have<br/><em>opinions.</em></h2>
     </div>
     <button class="reviews-toggle" type="button" aria-pressed="false" aria-controls="player-reviews">Pause reviews</button>
+    <div class="c">
     <div class="reviews-track-wrap" id="player-reviews" tabindex="0" role="region" aria-label="Player reviews – hover or focus to pause">
       <div class="reviews-track" aria-live="off">
 
@@ -609,6 +610,7 @@
         </div>
 
       </div>
+    </div>
     </div>
   </section>
   <!-- ─── BLOG ──────────────────────────────────── -->
