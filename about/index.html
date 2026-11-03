@@ -128,7 +128,8 @@
     .game-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px;}
     .game-card{background:var(--bg2);border:1px solid var(--border);padding:0;display:flex;flex-direction:column;text-decoration:none;transition:border-color .3s;}
     .game-card:hover{border-color:rgba(0,245,200,.35);}
-    .game-card img{width:100%;display:block;filter:saturate(.7) brightness(.75);}
+    .game-card img{width:100%;aspect-ratio:460/215;object-fit:cover;display:block;}
+    .game-card img.contain{object-fit:contain;background:#7198df;}
     .game-card-body{padding:28px 32px;flex:1;display:flex;flex-direction:column;gap:12px;}
     .game-card-title{font-family:var(--font-d);font-size:.9rem;font-weight:700;color:var(--cyan);}
     .game-card-meta{font-size:.65rem;color:var(--muted);letter-spacing:.08em;}
@@ -200,14 +201,14 @@
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
       <a href="/press/">Press</a>
-      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=about-nav-1" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a></nav>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=about-nav-1" target="_blank" rel="noopener noreferrer" class="ncta" aria-label="View Ruxar games on Steam"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-0.125em;flex:none;margin-right:0.5em"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>View on Steam</a></nav>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
   <div class="mobile-nav" aria-label="Mobile navigation"><a href="/#games">Games</a>
       <a href="/blog/">Blog</a>
       <a href="/about/">About</a>
       <a href="/press/">Press</a>
-      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=about-nav-2" target="_blank" rel="noopener noreferrer" class="ncta">Get on Steam</a></div>
+      <a href="https://store.steampowered.com/search/?developer=Ruxar&amp;utm_source=ruxar&amp;utm_medium=website&amp;utm_campaign=ruxar&amp;utm_content=about-nav-2" target="_blank" rel="noopener noreferrer" class="ncta" aria-label="View Ruxar games on Steam"><svg aria-hidden="true" focusable="false" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:-0.125em;flex:none;margin-right:0.5em"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>View on Steam</a></div>
 
 <main>
 
@@ -218,7 +219,7 @@
       <h1>About <em>Ruxar</em></h1>
       <p class="hero-sub">An Australian indie studio making precision platformers. Two games on Steam. One developer. Zero compromises on quality.</p>
       <div class="hero-ctas">
-        <a href="/games/izbot/" class="btn bp">See the Games</a>
+        <a href="#games" class="btn bp">See the Games</a>
         <a href="/press/" class="btn bs">Press Kit</a>
       </div>
       <div class="stats-strip">
@@ -231,27 +232,54 @@
   </section>
 
   <!-- THE GAMES -->
-  <section>
+  <section id="games">
     <div class="c">
       <p class="slabel">THE GAMES</p>
-      <h2 class="stitle">Two games. <em>One obsession.</em></h2>
+      <h2 class="stitle">Games by <em>Ruxar.</em></h2>
       <div class="game-grid">
         <a href="/games/izbot/" class="game-card">
           <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388970/header.jpg" alt="iZBOT on Steam" loading="lazy" />
           <div class="game-card-body">
             <p class="game-card-title">iZBOT</p>
-            <p class="game-card-meta">2015 · Windows · See player reviews on Steam</p>
+            <p class="game-card-meta">Windows · Precision platformer</p>
             <p class="game-card-desc">A nimble robot. Hazard-filled levels. Tight controls, instant deaths, and one more try — always one more try. The game that started it all.</p>
-            <p class="game-card-cta">View iZBOT →</p>
+            <p class="game-card-cta">More…</p>
           </div>
         </a>
         <a href="/games/izbot-2/" class="game-card">
           <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1452790/header.jpg" alt="iZBOT 2 on Steam" loading="lazy" />
           <div class="game-card-body">
             <p class="game-card-title">iZBOT 2</p>
-            <p class="game-card-meta">2022 · Windows</p>
+            <p class="game-card-meta">Windows · Precision platformer</p>
             <p class="game-card-desc">The sequel. More levels, new mechanics, and everything that made iZBOT work — pushed harder. Not for the faint-hearted.</p>
-            <p class="game-card-cta">View iZBOT 2 →</p>
+            <p class="game-card-cta">More…</p>
+          </div>
+        </a>
+        <a href="https://apps.microsoft.com/detail/9wzdncrfjfs7" class="game-card">
+          <img src="/img/more/pixel-raider.png" alt="Pixel Raider gameplay" loading="lazy" />
+          <div class="game-card-body">
+            <p class="game-card-title">Pixel Raider</p>
+            <p class="game-card-meta">Windows · Shooter</p>
+            <p class="game-card-desc">Dodge the enemy fleet and survive as long as you can in this side-scrolling space shooter.</p>
+            <p class="game-card-cta">View on Microsoft Store ↗</p>
+          </div>
+        </a>
+        <a href="https://apps.microsoft.com/detail/9wzdncrfjd8m" class="game-card">
+          <img src="/img/more/apple-bin.png" alt="Apple Bin artwork" loading="lazy" />
+          <div class="game-card-body">
+            <p class="game-card-title">Apple Bin</p>
+            <p class="game-card-meta">Windows · Puzzle</p>
+            <p class="game-card-desc">Get the apple into the bin in a physics puzzle game full of gravity flips, portals and crates.</p>
+            <p class="game-card-cta">View on Microsoft Store ↗</p>
+          </div>
+        </a>
+        <a href="https://ruxar.itch.io/run-blob-run" class="game-card">
+          <img class="contain" src="/img/more/run-blob-run.png" alt="Run Blob Run title artwork" loading="lazy" />
+          <div class="game-card-body">
+            <p class="game-card-title">Run Blob Run</p>
+            <p class="game-card-meta">Browser · Endless runner</p>
+            <p class="game-card-desc">Jump, change colour and dash through matching lasers as Blob makes a break for freedom.</p>
+            <p class="game-card-cta">Play on itch.io ↗</p>
           </div>
         </a>
       </div>
