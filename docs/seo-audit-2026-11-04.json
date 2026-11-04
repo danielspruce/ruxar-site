@@ -1,0 +1,1721 @@
+{
+  "pages": [
+    {
+      "file": "index.html",
+      "url": "https://ruxar.com/",
+      "title": [
+        "iZBOT \u2013 Indie Precision Platformer on Steam | Ruxar"
+      ],
+      "h1": [
+        "I Z BOT"
+      ],
+      "description": "iZBOT is a fast-paced precision platformer by Australian indie studio Ruxar. Guide a nimble robot through hazard-filled levels. Play iZBOT and iZBOT 2 on Steam.",
+      "canonical": [
+        "https://ruxar.com/"
+      ],
+      "robots": "",
+      "og_title": "iZBOT \u2013 Indie Precision Platformer on Steam | Ruxar",
+      "og_url": "https://ruxar.com/",
+      "images": 2,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        null
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/games/izbot-2/",
+        "https://ruxar.com/more/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/steam-game-completion-rates.html",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 357,
+      "depth": 0,
+      "incoming": 29
+    },
+    {
+      "file": "about/index.html",
+      "url": "https://ruxar.com/about/",
+      "title": [
+        "About \u2013 Ruxar | Australian Indie Game Studio"
+      ],
+      "h1": [
+        "About Ruxar"
+      ],
+      "description": "Ruxar is an Australian indie game studio founded in 2014 by Daniel Spruce. Makers of iZBOT and iZBOT 2 \u2014 precision platformers available on Steam.",
+      "canonical": [
+        "https://ruxar.com/about/"
+      ],
+      "robots": "",
+      "og_title": "About \u2013 Ruxar | Australian Indie Game Studio",
+      "og_url": "https://ruxar.com/about/",
+      "images": 5,
+      "missing_alt": 0,
+      "missing_dimensions": 5,
+      "schema_types": [
+        null
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/games/izbot-2/",
+        "https://apps.microsoft.com/detail/9wzdncrfjfs7",
+        "https://apps.microsoft.com/detail/9wzdncrfjd8m",
+        "https://ruxar.itch.io/run-blob-run",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "mailto:press@ruxar.com",
+        "https://ruxar.com/press/",
+        "https://ruxar.com/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/games/izbot-2/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": true,
+      "words": 367,
+      "depth": 1,
+      "incoming": 29
+    },
+    {
+      "file": "aiart/index.html",
+      "url": "https://ruxar.com/aiart/",
+      "title": [
+        "AI Art and Game Dev \u2013 An Honest Take | Ruxar"
+      ],
+      "h1": [
+        "AI Art and Game Dev \u2013 An Honest Take"
+      ],
+      "description": "An indie developer's honest assessment of AI art tools for game development \u2014 what they're useful for, where they fall short, and the real controversy around using them.",
+      "canonical": [
+        "https://ruxar.com/aiart/"
+      ],
+      "robots": "",
+      "og_title": "AI Art and Game Dev \u2013 An Honest Take",
+      "og_url": "https://ruxar.com/aiart/",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://help.openai.com/en/articles/11084440-chatgpt-images-faq",
+        "https://www.adobe.com/ai/overview/firefly/gen-ai-approach.html",
+        "https://partner.steamgames.com/doc/gettingstarted/contentsurvey",
+        "https://ruxar.com/how-to-make-animated-gifs/",
+        "https://ruxar.com/press/",
+        "https://ruxar.com/game-art-commissions/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/game-art-commissions/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1094,
+      "depth": 2,
+      "incoming": 2
+    },
+    {
+      "file": "blog/index.html",
+      "url": "https://ruxar.com/blog/",
+      "title": [
+        "Blog \u2013 Indie Game Dev, Platformer Tips & iZBOT | Ruxar"
+      ],
+      "h1": [
+        "Dev Blog"
+      ],
+      "description": "The Ruxar dev blog. Indie game development tips, precision platformer guides, Steam release lessons, and updates from the creator of iZBOT.",
+      "canonical": [
+        "https://ruxar.com/blog/"
+      ],
+      "robots": "",
+      "og_title": "Blog \u2013 Indie Game Dev & Platformer Tips | Ruxar",
+      "og_url": "https://ruxar.com/blog/",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "ItemList"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/posts/games-like-super-meat-boy.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/steam-game-completion-rates.html",
+        "https://ruxar.com/blog/posts/games-like-celeste.html",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+        "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+        "https://ruxar.com/blog/posts/izbot-2-review.html",
+        "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html",
+        "https://ruxar.com/blog/posts/how-long-to-beat-izbot.html",
+        "https://ruxar.com/blog/posts/izbot-review.html",
+        "https://ruxar.com/blog/posts/best-cheap-platformers-steam.html",
+        "https://ruxar.com/blog/posts/izbot-speedrun-guide.html",
+        "https://ruxar.com/blog/gamemaker-should-you-buy-it/",
+        "https://ruxar.com/gamemaker-sequences/",
+        "https://ruxar.com/making-your-game-appealing-to-letsplayers/",
+        "https://ruxar.com/game-art-commissions/",
+        "https://ruxar.com/whats-in-a-name/",
+        "https://ruxar.com/aiart/",
+        "https://ruxar.com/how-to-make-animated-gifs/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 740,
+      "depth": 1,
+      "incoming": 29
+    },
+    {
+      "file": "free-pixel-art/index.html",
+      "url": "https://ruxar.com/free-pixel-art/",
+      "title": [
+        "Free Pixel Art Assets for Games | Ruxar"
+      ],
+      "h1": [
+        "Free pixel art for your games."
+      ],
+      "description": "Download free pixel art assets for your games, including an explosion, battery, portal and animated enemy.",
+      "canonical": [
+        "https://ruxar.com/free-pixel-art/"
+      ],
+      "robots": "",
+      "og_title": "Free Pixel Art Assets for Games | Ruxar",
+      "og_url": "https://ruxar.com/free-pixel-art/",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [],
+      "links": [
+        "https://ruxar.com/free-pixel-art/",
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/free-pixel-art/",
+        "https://ruxar.itch.io/pixel-art-explosion",
+        "https://ruxar.itch.io/battery",
+        "https://ruxar.itch.io/portal",
+        "https://ruxar.itch.io/smol-chaser",
+        "https://ruxar.com/",
+        "https://ruxar.com/about/",
+        "https://ruxar.itch.io/"
+      ],
+      "visible_author": false,
+      "words": 182,
+      "depth": 2,
+      "incoming": 1
+    },
+    {
+      "file": "game-art-commissions/index.html",
+      "url": "https://ruxar.com/game-art-commissions/",
+      "title": [
+        "How to Commission Game Art for Your Indie Game | Ruxar"
+      ],
+      "h1": [
+        "How to Commission Game Art for Your Indie Game"
+      ],
+      "description": "A practical guide to commissioning game art as an indie developer \u2014 where to find artists, how to write a brief, what to pay, and how to avoid common mistakes.",
+      "canonical": [
+        "https://ruxar.com/game-art-commissions/"
+      ],
+      "robots": "",
+      "og_title": "How to Commission Game Art for Your Indie Game | Ruxar",
+      "og_url": "https://ruxar.com/game-art-commissions/",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/aiart/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 980,
+      "depth": 2,
+      "incoming": 2
+    },
+    {
+      "file": "gamemaker-sequences/index.html",
+      "url": "https://ruxar.com/gamemaker-sequences/",
+      "title": [
+        "GameMaker Sequences Tutorial \u2013 Animation Without Code | Ruxar"
+      ],
+      "h1": [
+        "GameMaker Sequences \u2013 Animation Without Writing Code"
+      ],
+      "description": "A practical guide to GameMaker Sequences \u2014 what they are, how to use them, and when they're better than manual GML animation. From an indie dev who used them in iZBOT.",
+      "canonical": [
+        "https://ruxar.com/gamemaker-sequences/"
+      ],
+      "robots": "",
+      "og_title": "GameMaker Sequences Tutorial \u2013 Animation Without Code",
+      "og_url": "https://ruxar.com/gamemaker-sequences/",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://manual.gamemaker.io/lts/en/The_Asset_Editors/Sequence_Properties/Broadcast_Messages.htm",
+        "https://manual.gamemaker.io/monthly/en/GameMaker_Language/GML_Reference/Asset_Management/Rooms/Sequence_Layers/layer_sequence_headdir.htm",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/gamemaker-should-you-buy-it/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1049,
+      "depth": 2,
+      "incoming": 2
+    },
+    {
+      "file": "how-to-make-animated-gifs/index.html",
+      "url": "https://ruxar.com/how-to-make-animated-gifs/",
+      "title": [
+        "How to Make Animated GIFs for Game Marketing | Ruxar"
+      ],
+      "h1": [
+        "How to Make Animated GIFs for Your Game"
+      ],
+      "description": "A practical guide to creating animated GIFs from your game for Steam, Twitter, and Reddit \u2014 tools, methods, and optimisation tips for indie developers.",
+      "canonical": [
+        "https://ruxar.com/how-to-make-animated-gifs/"
+      ],
+      "robots": "",
+      "og_title": "How to Make Animated GIFs for Game Marketing | Ruxar",
+      "og_url": "https://ruxar.com/how-to-make-animated-gifs/",
+      "images": 2,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/press/",
+        "https://partner.steamgames.com/doc/store/page/assets",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/making-your-game-appealing-to-letsplayers/",
+        "https://ruxar.com/blog/gamemaker-should-you-buy-it/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1294,
+      "depth": 2,
+      "incoming": 3
+    },
+    {
+      "file": "making-your-game-appealing-to-letsplayers/index.html",
+      "url": "https://ruxar.com/making-your-game-appealing-to-letsplayers/",
+      "title": [
+        "Making Your Game Appealing to Let's Players | Ruxar"
+      ],
+      "h1": [
+        "Making Your Game Appealing to Let's Players"
+      ],
+      "description": "Practical advice for indie developers on making games that streamers and Let's Players want to cover \u2014 from an Australian indie dev who shipped iZBOT on Steam.",
+      "canonical": [
+        "https://ruxar.com/making-your-game-appealing-to-letsplayers/"
+      ],
+      "robots": "",
+      "og_title": "Making Your Game Appealing to Let's Players | Ruxar",
+      "og_url": "https://ruxar.com/making-your-game-appealing-to-letsplayers/",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://partner.steamgames.com/doc/marketing/upcoming_events/nextfest",
+        "https://ruxar.com/how-to-make-animated-gifs/",
+        "https://ruxar.com/press/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/press/",
+        "https://ruxar.com/how-to-make-animated-gifs/",
+        "https://ruxar.com/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1463,
+      "depth": 2,
+      "incoming": 4
+    },
+    {
+      "file": "more/index.html",
+      "url": "https://ruxar.com/more/",
+      "title": [
+        "More Games &amp; Free Pixel Art Assets | Ruxar"
+      ],
+      "h1": [
+        "More games. More pixels."
+      ],
+      "description": "Discover more games from Ruxar and free pixel art assets for your own projects.",
+      "canonical": [
+        "https://ruxar.com/more/"
+      ],
+      "robots": "",
+      "og_title": "More Games & Free Pixel Art Assets | Ruxar",
+      "og_url": "https://ruxar.com/more/",
+      "images": 3,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [],
+      "links": [
+        "https://ruxar.com/more/",
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/more/",
+        "https://ruxar.com/free-pixel-art/",
+        "https://apps.microsoft.com/detail/9wzdncrfjfs7",
+        "https://apps.microsoft.com/detail/9wzdncrfjd8m",
+        "https://ruxar.itch.io/run-blob-run",
+        "https://ruxar.com/free-pixel-art/",
+        "https://ruxar.com/",
+        "https://ruxar.com/about/",
+        "https://ruxar.itch.io/"
+      ],
+      "visible_author": false,
+      "words": 196,
+      "depth": 1,
+      "incoming": 1
+    },
+    {
+      "file": "photomosaica/index.html",
+      "url": "https://ruxar.com/photomosaica/",
+      "title": [
+        "Photomosaica \u2013 Photo Mosaic Software for Windows | Private, Offline, One-Time Purchase"
+      ],
+      "h1": [
+        "Photo Mosaic Software for Windows \u2014 Private, Offline &amp; One-Time Purchase"
+      ],
+      "description": "Create stunning photo mosaics on your PC with Photomosaica. No subscriptions, no uploads, no AI scanning. 100% offline Windows software. Coming soon to Microsoft Store.",
+      "canonical": [
+        "https://ruxar.com/photomosaica/"
+      ],
+      "robots": "index, follow",
+      "og_title": "",
+      "og_url": "",
+      "images": 5,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        null
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/photomosaica/",
+        "https://ruxar.com/photomosaica/"
+      ],
+      "visible_author": false,
+      "words": 410,
+      "depth": null,
+      "incoming": 0
+    },
+    {
+      "file": "press/index.html",
+      "url": "https://ruxar.com/press/",
+      "title": [
+        "Press Kit \u2013 Ruxar | Australian Indie Game Studio"
+      ],
+      "h1": [
+        "Press &amp; Media"
+      ],
+      "description": "Press kit for Ruxar, Australian indie game studio behind iZBOT and iZBOT 2. Fact sheets, screenshots, logos, and press contact for media and curators.",
+      "canonical": [
+        "https://ruxar.com/press/"
+      ],
+      "robots": "",
+      "og_title": "Press Kit \u2013 Ruxar | Australian Indie Game Studio",
+      "og_url": "https://ruxar.com/press/",
+      "images": 14,
+      "missing_alt": 0,
+      "missing_dimensions": 12,
+      "schema_types": [
+        null
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "mailto:press@ruxar.com",
+        "https://store.steampowered.com/search/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "mailto:press@ruxar.com",
+        "https://store.steampowered.com/app/1452790/iZBOT_2/",
+        "mailto:press@ruxar.com",
+        "https://ruxar.com/img/izbot-2/logo.png",
+        "https://ruxar.com/img/izbot-2/logo-glitch.gif",
+        "mailto:press@ruxar.com",
+        "https://ruxar.com/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/games/izbot-2/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 330,
+      "depth": 1,
+      "incoming": 29
+    },
+    {
+      "file": "whats-in-a-name/index.html",
+      "url": "https://ruxar.com/whats-in-a-name/",
+      "title": [
+        "What's in a Name? How to Name Your Indie Game and Studio | Ruxar"
+      ],
+      "h1": [
+        "What's in a Name? How to Name Your Indie Game and Studio"
+      ],
+      "description": "How to choose a name for your indie game or game studio \u2014 practical principles, common mistakes, and the naming stories behind iZBOT and Ruxar.",
+      "canonical": [
+        "https://ruxar.com/whats-in-a-name/"
+      ],
+      "robots": "",
+      "og_title": "What's in a Name? How to Name Your Indie Game and Studio | Ruxar",
+      "og_url": "https://ruxar.com/whats-in-a-name/",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://www.ipaustralia.gov.au/trade-marks/search-existing-trade-marks",
+        "https://www.uspto.gov/trademarks/search",
+        "https://ruxar.com/games/izbot/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/gamemaker-should-you-buy-it/",
+        "https://ruxar.com/making-your-game-appealing-to-letsplayers/",
+        "https://ruxar.com/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1306,
+      "depth": 2,
+      "incoming": 2
+    },
+    {
+      "file": "games/izbot/index.html",
+      "url": "https://ruxar.com/games/izbot/",
+      "title": [
+        "iZBOT \u2013 Precision Platformer Game on Steam | Ruxar"
+      ],
+      "h1": [
+        "I Z BOT"
+      ],
+      "description": "iZBOT is a precision platformer with player reviews on Steam. Tight controls, instant deaths, one more try. Built by one developer in GameMaker.",
+      "canonical": [
+        "https://ruxar.com/games/izbot/"
+      ],
+      "robots": "",
+      "og_title": "iZBOT \u2013 Precision Platformer Game on Steam",
+      "og_url": "https://ruxar.com/games/izbot/",
+      "images": 7,
+      "missing_alt": 0,
+      "missing_dimensions": 6,
+      "schema_types": [
+        null,
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/games/izbot-2/",
+        "https://ruxar.com/games/izbot-2/",
+        "https://ruxar.com/games/izbot-2/",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/games/izbot-2/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 474,
+      "depth": 1,
+      "incoming": 12
+    },
+    {
+      "file": "games/izbot-2/index.html",
+      "url": "https://ruxar.com/games/izbot-2/",
+      "title": [
+        "iZBOT 2 \u2013 Precision Platformer Sequel on Steam | Ruxar"
+      ],
+      "h1": [
+        "I Z BOT 2"
+      ],
+      "description": "iZBOT 2 is the sequel to iZBOT \u2014 more levels, new mechanics, same tight controls, harder than ever. Available on Steam from Australian indie studio Ruxar.",
+      "canonical": [
+        "https://ruxar.com/games/izbot-2/"
+      ],
+      "robots": "",
+      "og_title": "iZBOT 2 \u2013 Precision Platformer Sequel on Steam",
+      "og_url": "https://ruxar.com/games/izbot-2/",
+      "images": 7,
+      "missing_alt": 0,
+      "missing_dimensions": 6,
+      "schema_types": [
+        null,
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/games/izbot-2/",
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://store.steampowered.com/app/1452790/IZBOT_2/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/games/izbot/",
+        "https://store.steampowered.com/app/1452790/IZBOT_2/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 546,
+      "depth": 1,
+      "incoming": 4
+    },
+    {
+      "file": "blog/gamemaker-should-you-buy-it/index.html",
+      "url": "https://ruxar.com/blog/gamemaker-should-you-buy-it/",
+      "title": [
+        "What Is GameMaker? Free vs Paid Explained | Ruxar"
+      ],
+      "h1": [
+        "What Is GameMaker? Free vs Paid Explained"
+      ],
+      "description": "What is GameMaker, and is it free? Compare free and paid licences, commercial use, and console exports, with advice from the developer of iZBOT.",
+      "canonical": [
+        "https://ruxar.com/blog/gamemaker-should-you-buy-it/"
+      ],
+      "robots": "",
+      "og_title": "What Is GameMaker? Free vs Paid Explained",
+      "og_url": "https://ruxar.com/blog/gamemaker-should-you-buy-it/",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://gamemaker.io/en/get",
+        "https://gamemaker.io/en/help/articles/gamemaker-faq",
+        "https://ruxar.com/gamemaker-sequences/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/gamemaker-sequences/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1053,
+      "depth": 2,
+      "incoming": 4
+    },
+    {
+      "file": "blog/posts/best-cheap-platformers-steam.html",
+      "url": "https://ruxar.com/blog/posts/best-cheap-platformers-steam.html",
+      "title": [
+        "Best Cheap Platformers on Steam Under $10 (2026) | Ruxar"
+      ],
+      "h1": [
+        "Best Cheap Platformers on Steam Under $10 (2026)"
+      ],
+      "description": "The best platformers on Steam under $10 \u2014 including precision platformers, indie classics, and hidden gems worth every cent.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/best-cheap-platformers-steam.html"
+      ],
+      "robots": "",
+      "og_title": "Best Cheap Platformers on Steam Under $10 (2026)",
+      "og_url": "https://ruxar.com/blog/posts/best-cheap-platformers-steam.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+        "https://ruxar.com/blog/posts/izbot-review.html",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1130,
+      "depth": 2,
+      "incoming": 2
+    },
+    {
+      "file": "blog/posts/best-precision-platformers-steam.html",
+      "url": "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+      "title": [
+        "10 Best Precision Platformers on Steam | Ruxar"
+      ],
+      "h1": [
+        "10 Best Precision Platformers on Steam Right Now"
+      ],
+      "description": "Looking for the best precision platformers on Steam? We rank 10 must-play titles including Celeste, Super Meat Boy, iZBOT, and more \u2014 find your next challenge.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html"
+      ],
+      "robots": "",
+      "og_title": "10 Best Precision Platformers on Steam",
+      "og_url": "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://store.steampowered.com/app/1452790/IZBOT_2/",
+        "https://ruxar.com/blog/posts/best-cheap-platformers-steam.html",
+        "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1242,
+      "depth": 1,
+      "incoming": 14
+    },
+    {
+      "file": "blog/posts/games-like-celeste.html",
+      "url": "https://ruxar.com/blog/posts/games-like-celeste.html",
+      "title": [
+        "10 Games Like Celeste \u2013 What to Play Next | Ruxar"
+      ],
+      "h1": [
+        "10 Games Like Celeste \u2013 What to Play Next"
+      ],
+      "description": "Loved Celeste? Here are 10 games like Celeste that deliver the same tight controls, brutal challenge, and satisfying precision platformer feel.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/games-like-celeste.html"
+      ],
+      "robots": "",
+      "og_title": "10 Games Like Celeste \u2013 What to Play Next",
+      "og_url": "https://ruxar.com/blog/posts/games-like-celeste.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/posts/games-like-super-meat-boy.html",
+        "https://store.steampowered.com/app/1452790/IZBOT_2/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": true,
+      "words": 1256,
+      "depth": 2,
+      "incoming": 2
+    },
+    {
+      "file": "blog/posts/games-like-super-meat-boy.html",
+      "url": "https://ruxar.com/blog/posts/games-like-super-meat-boy.html",
+      "title": [
+        "Games Like Super Meat Boy: Platformers With Fast Restarts | Ruxar"
+      ],
+      "h1": [
+        "Games Like Super Meat Boy: Platformers With Fast Restarts"
+      ],
+      "description": "Looking for games like Super Meat Boy? Compare six precision platformers by movement, level structure and retry style to find your next challenge.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/games-like-super-meat-boy.html"
+      ],
+      "robots": "",
+      "og_title": "Games Like Super Meat Boy: Platformers With Fast Restarts",
+      "og_url": "https://ruxar.com/blog/posts/games-like-super-meat-boy.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/230270/N_NPLUSPLUS/",
+        "https://store.steampowered.com/app/70300/VVVVVV/",
+        "https://michaeltoddgames.itch.io/electronic-super-joy",
+        "https://store.steampowered.com/app/504230/Celeste/",
+        "https://ruxar.com/blog/posts/games-like-celeste.html",
+        "https://store.steampowered.com/app/583470/The_End_Is_Nigh/",
+        "https://ruxar.com/games/izbot/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": true,
+      "words": 930,
+      "depth": 2,
+      "incoming": 2
+    },
+    {
+      "file": "blog/posts/how-long-to-beat-izbot.html",
+      "url": "https://ruxar.com/blog/posts/how-long-to-beat-izbot.html",
+      "title": [
+        "How Long Does It Take to Beat iZBOT? | Ruxar"
+      ],
+      "h1": [
+        "How Long Does It Take to Beat iZBOT?"
+      ],
+      "description": "How long does it take to beat iZBOT? A breakdown of playtime by skill level \u2014 for casual players, experienced platformer fans, and speedrunners.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/how-long-to-beat-izbot.html"
+      ],
+      "robots": "",
+      "og_title": "How Long Does It Take to Beat iZBOT?",
+      "og_url": "https://ruxar.com/blog/posts/how-long-to-beat-izbot.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/izbot-2-review.html",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": true,
+      "words": 803,
+      "depth": 2,
+      "incoming": 3
+    },
+    {
+      "file": "blog/posts/indie-platformer-dev-lessons.html",
+      "url": "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+      "title": [
+        "5 Lessons From Shipping an Indie Platformer on Steam | Ruxar"
+      ],
+      "h1": [
+        "5 Lessons From Shipping an Indie Platformer on Steam"
+      ],
+      "description": "What shipping iZBOT on Steam taught one solo indie dev about pricing, marketing, release timing, and what actually drives sales. Honest lessons from the trenches.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html"
+      ],
+      "robots": "",
+      "og_title": "5 Lessons From Shipping an Indie Platformer on Steam",
+      "og_url": "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/whats-in-a-name/",
+        "https://ruxar.com/making-your-game-appealing-to-letsplayers/",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1193,
+      "depth": 2,
+      "incoming": 5
+    },
+    {
+      "file": "blog/posts/izbot-2-review.html",
+      "url": "https://ruxar.com/blog/posts/izbot-2-review.html",
+      "title": [
+        "iZBOT 2 Review \u2013 Is the Sequel Worth It? | Ruxar"
+      ],
+      "h1": [
+        "iZBOT 2 Review \u2013 Is the Sequel Worth It?"
+      ],
+      "description": "An honest review of iZBOT 2 from the developer. What's new, what's harder, what's better \u2014 and whether the sequel is worth playing on Steam.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/izbot-2-review.html"
+      ],
+      "robots": "",
+      "og_title": "iZBOT 2 Review \u2013 Is the Sequel Worth It?",
+      "og_url": "https://ruxar.com/blog/posts/izbot-2-review.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://store.steampowered.com/app/1452790/IZBOT_2/",
+        "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/1452790/IZBOT_2/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 763,
+      "depth": 2,
+      "incoming": 4
+    },
+    {
+      "file": "blog/posts/izbot-indie-game-postmortem.html",
+      "url": "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+      "title": [
+        "iZBOT Postmortem: Development Costs &amp; Revenue | Ruxar"
+      ],
+      "h1": [
+        "iZBOT Postmortem: Development Costs and Revenue"
+      ],
+      "description": "A solo indie game case study: reported development time, expenses and revenue from January 2017, with sources, limitations and discount calculations.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html"
+      ],
+      "robots": "",
+      "og_title": "iZBOT Postmortem: Development Costs & Revenue",
+      "og_url": "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://www.gamespress.com/",
+        "https://twitter.com/puppiesandanime",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://www.gamedeveloper.com/business/izbot-indie-game-postmortem",
+        "https://www.gamedeveloper.com/business/izbot-indie-game-postmortem",
+        "https://www.gamedeveloper.com/business/izbot-indie-game-postmortem",
+        "https://www.gamedeveloper.com/business/izbot-indie-game-postmortem",
+        "https://www.gamedeveloper.com/business/izbot-indie-game-postmortem",
+        "https://www.gamedeveloper.com/business/izbot-indie-game-postmortem",
+        "https://www.gamedeveloper.com/business/izbot-indie-game-postmortem",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": true,
+      "words": 1063,
+      "depth": 1,
+      "incoming": 10
+    },
+    {
+      "file": "blog/posts/izbot-review.html",
+      "url": "https://ruxar.com/blog/posts/izbot-review.html",
+      "title": [
+        "iZBOT Review \u2013 Is It Worth It? | Ruxar"
+      ],
+      "h1": [
+        "iZBOT Review \u2013 Is It Worth It?"
+      ],
+      "description": "An honest review of iZBOT from the developer who made it. What the game does well, where it's hard, and who it's actually made for.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/izbot-review.html"
+      ],
+      "robots": "",
+      "og_title": "iZBOT Review \u2013 Is It Worth It?",
+      "og_url": "https://ruxar.com/blog/posts/izbot-review.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Review",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/posts/izbot-speedrun-guide.html",
+        "https://ruxar.com/blog/posts/how-long-to-beat-izbot.html",
+        "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1114,
+      "depth": 2,
+      "incoming": 3
+    },
+    {
+      "file": "blog/posts/izbot-speedrun-guide.html",
+      "url": "https://ruxar.com/blog/posts/izbot-speedrun-guide.html",
+      "title": [
+        "iZBOT Speedrun Guide \u2013 Tips, Routes & Tricks | Ruxar"
+      ],
+      "h1": [
+        "iZBOT Speedrun Guide \u2013 Tips, Routes & Tricks"
+      ],
+      "description": "How to speedrun iZBOT. Tips on movement tech, route selection, and the mindset behind going fast in a precision platformer.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/izbot-speedrun-guide.html"
+      ],
+      "robots": "",
+      "og_title": "iZBOT Speedrun Guide \u2013 Tips, Routes & Tricks",
+      "og_url": "https://ruxar.com/blog/posts/izbot-speedrun-guide.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/izbot-2-review.html",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://www.speedrun.com/",
+        "https://ruxar.com/blog/posts/how-long-to-beat-izbot.html",
+        "https://ruxar.com/blog/posts/izbot-review.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1218,
+      "depth": 2,
+      "incoming": 2
+    },
+    {
+      "file": "blog/posts/izbot-vs-izbot-2.html",
+      "url": "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html",
+      "title": [
+        "iZBOT vs iZBOT 2 \u2013 Which Should You Play First? | Ruxar"
+      ],
+      "h1": [
+        "iZBOT vs iZBOT 2 \u2013 Which Should You Play First?"
+      ],
+      "description": "Comparing iZBOT and iZBOT 2 \u2014 what's different, which is harder, and which precision platformer you should start with on Steam.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html"
+      ],
+      "robots": "",
+      "og_title": "iZBOT vs iZBOT 2 \u2013 Which Should You Play First?",
+      "og_url": "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/posts/izbot-2-review.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/1452790/IZBOT_2/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 755,
+      "depth": 2,
+      "incoming": 6
+    },
+    {
+      "file": "blog/posts/steam-game-completion-rates.html",
+      "url": "https://ruxar.com/blog/posts/steam-game-completion-rates.html",
+      "title": [
+        "Steam Game Completion Rates: Six Achievement Milestones | Ruxar"
+      ],
+      "h1": [
+        "Steam Game Completion Rates: Six Achievement Milestones"
+      ],
+      "description": "A sourced comparison of six Steam game milestones, from Celeste to Portal 2. See unlock rates, definitions, limitations, and the collection method.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/steam-game-completion-rates.html"
+      ],
+      "robots": "",
+      "og_title": "Steam Game Completion Rates: Six Achievement Milestones",
+      "og_url": "https://ruxar.com/blog/posts/steam-game-completion-rates.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://steamcommunity.com/stats/1145360/achievements",
+        "https://steamcommunity.com/stats/504230/achievements",
+        "https://steamcommunity.com/stats/Portal2/achievements/",
+        "https://steamcommunity.com/stats/105600/achievements/",
+        "https://steamcommunity.com/stats/367520/achievements/",
+        "https://steamcommunity.com/stats/268910/achievements",
+        "https://ruxar.com/data/steam-completion-milestones-2026-10-18.csv",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://partner.steamgames.com/doc/webapi/isteamuserstats",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html",
+        "https://ruxar.com/blog/",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 654,
+      "depth": 1,
+      "incoming": 3
+    },
+    {
+      "file": "blog/posts/why-difficult-games-make-us-retry.html",
+      "url": "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+      "title": [
+        "Why Difficult Games Make Us Want One More Try | Ruxar"
+      ],
+      "h1": [
+        "Why Difficult Games Make Us Want One More Try"
+      ],
+      "description": "Why do we retry difficult games? Explore five research papers on mastery, persistence, frustration, and skills, with clear links to precision platformers.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html"
+      ],
+      "robots": "",
+      "og_title": "Why Difficult Games Make Us Want One More Try",
+      "og_url": "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/steam-game-completion-rates.html",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://link.springer.com/article/10.1007/s11031-006-9051-8",
+        "https://myweb.fsu.edu/vshute/pdf/pbmp.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/24377357/",
+        "https://pubmed.ncbi.nlm.nih.gov/27485132/",
+        "https://pubmed.ncbi.nlm.nih.gov/22426427/",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/steam-game-completion-rates.html",
+        "https://ruxar.com/blog/posts/izbot-vs-izbot-2.html",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/games/izbot/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": false,
+      "words": 1156,
+      "depth": 1,
+      "incoming": 4
+    },
+    {
+      "file": "blog/posts/why-hard-games-are-good-for-you.html",
+      "url": "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+      "title": [
+        "Why Hard Platformer Games Are Actually Good For You | Ruxar"
+      ],
+      "h1": [
+        "Why Hard Platformer Games Are Actually Good For You"
+      ],
+      "description": "Hard platformer games are frustrating by design \u2014 but science suggests that challenge, failure, and mastery are what make games genuinely rewarding. Here's why.",
+      "canonical": [
+        "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html"
+      ],
+      "robots": "",
+      "og_title": "Why Hard Platformer Games Are Actually Good For You",
+      "og_url": "https://ruxar.com/blog/posts/why-hard-games-are-good-for-you.html",
+      "images": 0,
+      "missing_alt": 0,
+      "missing_dimensions": 0,
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "links": [
+        "https://ruxar.com/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://store.steampowered.com/app/388970/iZBOT/",
+        "https://ruxar.com/blog/posts/why-difficult-games-make-us-retry.html",
+        "https://ruxar.com/blog/posts/best-precision-platformers-steam.html",
+        "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+        "https://ruxar.com/blog/posts/izbot-indie-game-postmortem.html",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/blog/posts/indie-platformer-dev-lessons.html",
+        "https://ruxar.com/",
+        "https://ruxar.com/blog/",
+        "https://ruxar.com/about/",
+        "https://ruxar.com/press/",
+        "https://store.steampowered.com/search/",
+        "https://ruxar.com/sitemap.xml"
+      ],
+      "visible_author": true,
+      "words": 1097,
+      "depth": 2,
+      "incoming": 6
+    }
+  ],
+  "excluded": [
+    "404.html",
+    "Blinky/index.html",
+    "game-art-commisions/index.html",
+    "gamemaker-sequences-parallax-zoom/index.html",
+    "izbot/index.html",
+    "izbot-an-indie-game-postmortem/index.html",
+    "izbot-greenlight/index.html",
+    "reverse-concept-art/index.html",
+    "blog/new-2d-platformer-izbot/index.html",
+    "author/daniel-spruce/index.html",
+    "author/daniel.spruce/index.html"
+  ],
+  "sitemap_missing": [],
+  "sitemap_extra": [],
+  "note": "Source inventory BEFORE audit fixes. Schema types inside @graph require separate inspection; null here does not mean absent schema. Depth excludes query strings and fragments."
+}
