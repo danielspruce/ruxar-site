@@ -106,6 +106,6 @@ test('all public content headers use the Ruxar logo and homepage navigation', ()
     assert.equal(brand[1].replace(/<[^>]+>/g, '').trim(), 'RUXAR', file);
     const links = [...header[1].matchAll(/<a href="([^"]+)"/g)].map(m => m[1].split('?')[0]);
     assert.deepEqual(links, ['/', '/#games', '/blog/', '/about/', '/press/', 'https://store.steampowered.com/search/'], file);
-    assert.equal((html.match(/href="\/header.css"/g) || []).length, 1, file);
+    assert.equal((html.match(/<link rel="stylesheet" href="\/header.css"/g) || []).length, 1, file);
   }
 });

@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Discover shared styles early; their stylesheet order below preserves the cascade. -->
+  <link rel="preload" href="/readability.css" as="style" />
+  <link rel="preload" href="/header.css" as="style" />
+  <link rel="preload" href="/fonts/orbitron-900.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preconnect" href="https://cdn.akamai.steamstatic.com" />
+  <link rel="preload" as="image" href="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" fetchpriority="high" />
   <!-- Strip legacy WordPress/Wordfence query-string URLs (?ND, ?s=, ?wordfence_lh=…)
        and redirect to the canonical homepage. Fires before any content renders. -->
   <title>iZBOT – Indie Precision Platformer on Steam | Ruxar</title>
@@ -129,11 +135,20 @@
   <link rel="manifest" href="/site.webmanifest" />
   <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
-
   <style>
+    /* Preload the title face and briefly block fallback text to avoid a font flash. */
+    @font-face {
+      font-family: 'Orbitron'; font-style: normal; font-weight: 400;
+      font-display: block; src: url('/fonts/orbitron-400.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Orbitron'; font-style: normal; font-weight: 700;
+      font-display: block; src: url('/fonts/orbitron-700.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Orbitron'; font-style: normal; font-weight: 900;
+      font-display: block; src: url('/fonts/orbitron-900.ttf') format('truetype');
+    }
     :root {
       --bg:          #05070d;
       --bg2:         #080c15;
@@ -495,7 +510,7 @@
       <div class="gg rv">
 
         <a href="/games/izbot/" class="gc" aria-label="Learn more about iZBOT">
-          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" width="460" height="215" alt="iZBOT – indie precision platformer game on Steam by Ruxar" loading="lazy" /></div>
+          <div class="gc-img-wrap"><img src="https://cdn.akamai.steamstatic.com/steam/apps/388970/header.jpg?t=1667475574" width="460" height="215" alt="iZBOT – indie precision platformer game on Steam by Ruxar" loading="eager" fetchpriority="high" /></div>
           <div class="gcov"></div>
           <div class="gbody">
             <p class="gnum">01 / 02</p>
