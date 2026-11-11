@@ -101,7 +101,9 @@ test('all public content headers use the Ruxar logo and homepage navigation', ()
     if (file.includes('design-concepts') || /http-equiv="refresh"|window\.location\.replace/i.test(html)) continue;
     const header = html.match(/<header class="site-header">([\s\S]*?)<\/header>/);
     assert.ok(header, `Missing studio header: ${file}`);
-    assert.ok(header[1].includes('>RUXAR</a>'), file);
+    const brand = header[1].match(/<a\b[^>]*class="site-brand"[^>]*>([\s\S]*?)<\/a>/);
+    assert.ok(brand, `Missing studio brand: ${file}`);
+    assert.equal(brand[1].replace(/<[^>]+>/g, '').trim(), 'RUXAR', file);
     const links = [...header[1].matchAll(/<a href="([^"]+)"/g)].map(m => m[1].split('?')[0]);
     assert.deepEqual(links, ['/', '/#games', '/blog/', '/about/', '/press/', 'https://store.steampowered.com/search/'], file);
     assert.equal((html.match(/href="\/header.css"/g) || []).length, 1, file);
